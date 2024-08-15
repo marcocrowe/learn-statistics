@@ -29,12 +29,62 @@ Identify the parameter and statistic - give the symbol and value for both.
 
 #### Answer 1.A.3
 
-The parameter is the proportion of the Irish public who support the policy. The symbol is $p$ and the value is $p = 0.30$.
+- **Parameter (Population Proportion)**: The parameter is the true proportion of the Irish public who support the new government policy.
+  - **Symbol**: $p$
+  - **Value**: Unknown, but the researcher hypothesizes it to be $p_0 = 0.30$ (30%).
 
-### Question 1.B
+- **Statistic (Sample Proportion)**: The statistic is the proportion of the sampled individuals who support the new government policy.
+  - **Symbol**: $\hat{p}$
+  - **Value**: $\hat{p} = 0.2875$ (28.75%).
 
-The melting points (C) of n =50 alloy filaments is investigated yielding T= 320.1 and
+### Question 1.B (5 Marks)
+
+The melting points (C) of n=50 alloy filaments is investigated yielding T= 320.1 and
 s = 6.75. Calculate a 95% confidence interval for the mean melting point p.
+
+#### Answer 1.B
+
+<details>
+<summary>Choosing a Distribution</summary>
+
+To determine whether to use the **t-distribution** or the **z-distribution** for calculating the confidence interval, you need to consider two factors:
+
+1. **Sample Size**:
+   - For **large sample sizes** (typically $n \geq 30$), the **z-distribution** (normal distribution) is usually used to calculate the confidence interval, because the Central Limit Theorem ensures that the sample mean will be normally distributed.
+   - For **small sample sizes** (typically $n < 30$), the **t-distribution** is used because the t-distribution accounts for the additional uncertainty that comes with estimating the population standard deviation $\sigma$ using the sample standard deviation $s$.
+
+2. **Use of Sample Standard Deviation**:
+
+   - When the population standard deviation $\sigma$ is **unknown** and the sample size is relatively small, the **t-distribution** is more appropriate because it adjusts for the additional variability that comes with estimating $\sigma$ using $s$.
+   - Even for **larger samples** (like $n = 50$), if you are using the sample standard deviation $s$ instead of the population standard deviation $\sigma$, the **t-distribution** is still the more accurate approach.
+
+Why use the t-distribution in this case?  
+
+In your problem:
+
+- The **sample size $n = 50$** is relatively large, but the population standard deviation $\sigma$ is **unknown** (you are given the sample standard deviation $s = 6.75$).
+- Since you are using the **sample standard deviation $s$**, it is safer to use the **t-distribution** rather than the z-distribution.
+
+Thus, you would calculate the confidence interval using the formula:
+
+$$\bar{x} \pm t_{\alpha/2} \times \frac{s}{\sqrt{n}}$$
+
+because the sample size, though not extremely small, still warrants the use of the **t-distribution** due to the reliance on the sample standard deviation.
+
+</details>
+
+- Sample size $n = 50$
+- Mean $\bar{x} = 320.1$
+- Standard deviation $s = 6.75$
+- Confidence level $1 - \alpha = 0.95$
+
+The confidence interval for the mean melting point $\mu$ is given by:
+
+$$
+\bar{x} \pm t_{\alpha/2} \times \frac{s}{\sqrt{n}}
+$$
+
+Where $t_{\alpha/2}$ is the critical value for the t-distribution with $n-1$ degrees of freedom and $\alpha/2$ significance level.
 
 ### Question 1.C (5 Marks)
 
