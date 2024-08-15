@@ -13,13 +13,23 @@ What is the population?
 
 #### Answer 1.A.1
 
+The population is the Irish public.
+
 #### Question 1.A.2 (1 Mark)
 
 Identify any potential bias.
 
+#### Answer 1.A.2
+
+The researcher has drawn a sample from a list of individuals living in his area. This may introduce bias as the sample may not be representative of the Irish public.  A better approach would be to use a random sample of the Irish public, i.e. a few people from each county (area).
+
 #### Question 1.A.3 (2 Marks)
 
 Identify the parameter and statistic - give the symbol and value for both.
+
+#### Answer 1.A.3
+
+The parameter is the proportion of the Irish public who support the policy. The symbol is $p$ and the value is $p = 0.30$.
 
 ### Question 1.B
 
@@ -38,53 +48,23 @@ What percentage of the boxes have cereal weighing over 500g?
 #### Question 1.C.2 (3 Marks)
 
 If n = 5 boxes are selected at random compute $Pr(\overline{X} \leq 499.5)$.
-(i)
 
-(3 Marks)
+### Question 1.D (5 Marks)
 
-(3 Marks)
+$A \sim t_{11}. \text {Given }\Gamma(5.5)=52.34$, calculate $f(a=1)$.
 
-Q1. (d)
-
-A~ t11. Given I(5.5)=52.34,calculate f(a=1).
-
-Q1. (e)
+### Question 1.E (5 Marks)
 
 Consider the following joint distribution:
 
-p(x,y)
+| p(x,y) | 0 | 1 | 2 |
+|--------|---|---|---|
+| 0      | 0.1 | ? | 0.25|
+| 1      | 0.15 | 0.15 | 0.25|
 
-(5 Marks)
 
-y
-
-1
-
-2
-
-0
-
-0.1
-
-0.05
-
-1
-
-?
-0.15
-
-2
-
-0.25
-0.25
-
-Complete the table and calculate p(x) and p(y).
-
-(5 Marks)
-
-(End of Question 1)
+## Paper Details
 
 STAT08024 - Applied Statistical Analysis
 Summer Examinations 2023/2024
 
-Page 2 of 8
