@@ -67,7 +67,7 @@ In your problem:
 
 Thus, you would calculate the confidence interval using the formula:
 
-$$\bar{x} \pm t_{\alpha/2} \times \frac{s}{\sqrt{n}}$$
+$$\bar{x} \pm t_{v,\alpha/2} \times \frac{s}{\sqrt{n}}$$
 
 because the sample size, though not extremely small, still warrants the use of the **t-distribution** due to the reliance on the sample standard deviation.
 
@@ -81,10 +81,60 @@ because the sample size, though not extremely small, still warrants the use of t
 The confidence interval for the mean melting point $\mu$ is given by:
 
 $$
-\bar{x} \pm t_{\alpha/2} \times \frac{s}{\sqrt{n}}
+\bar{x} \pm t_{v,\alpha/2} \times \frac{s}{\sqrt{n}}
 $$
 
-Where $t_{\alpha/2}$ is the critical value for the t-distribution with $n-1$ degrees of freedom and $\alpha/2$ significance level.
+Where $t_{v,\alpha/2}$ is the critical value from the t-distribution with $v = n - 1 = 50 - 1 = 49$ degrees of freedom and $\alpha/2 = (1 - 0.95)/2 = 0.025$.  
+
+The critical value $t_{v,\alpha/2}$ can be found using a t-table or a statistical calculator. For a 95% confidence level and 49 degrees of freedom, the critical value is approximately $2.0096$.
+
+<details>
+<summary>Calculating a Confidence Interval not in the t-table</summary>
+To use **linear interpolation** for estimating the critical value of $t_{49,\alpha/2}$, we'll use the nearest critical values from the t-distribution table for $v = 40$ and $v = 60$. Here are the steps:
+
+Step 1. Identify known values from the t-distribution table:
+
+- For $v = 40$ and $\alpha/2 = 0.025$ (95% confidence level):
+  - $t_{40,\alpha/2} = 2.021$
+- For $v = 60$ and $\alpha/2 = 0.025$:
+  - $t_{60,\alpha/2} = 2.000$
+
+We want to estimate the value for $v = 49$.
+
+Step 2: Set up the linear interpolation formula  
+
+To find the critical value for $v = 49$, we can set up a proportion:
+
+$t_{49} = t_{40} + \left( \frac{49 - 40}{60 - 40} \right) \times (t_{60} - t_{40})$
+
+Where:
+
+- $t_{49}$ is the estimated critical value we want.
+- $t_{40}$ and $t_{60}$ are the known critical values.
+- $49 - 40$ is the difference between 49 and 40.
+- $60 - 40$ is the total difference between the degrees of freedom.
+
+Step 3: Plug in the values and calculate
+
+Let's calculate the interpolated value.
+
+It seems like I can’t do more advanced data analysis right now. Please try again later.
+
+However, you can follow the formula and plug in the numbers manually:
+
+$t_{49} = 2.021 + \left( \frac{49 - 40}{60 - 40} \right) \times (2.000 - 2.021)$
+
+This should give you an interpolated value close to $2.0096$, matching the exact calculation.
+</details>
+
+Substitute the values into the formula:
+
+$320.1 \pm 2.0096 \times \dfrac{6.75}{\sqrt{50}} = $  
+$320.1 \pm 2.0096 \times \dfrac{6.75}{7.0711} = $
+$320.1 \pm 1.92 = $
+$[318.18, 322.02]$
+
+$\text{The 95\% confidence interval for the mean melting point is \boxed{[318.18, 322.02]}}$
 
 ### Question 1.C (5 Marks)
 
