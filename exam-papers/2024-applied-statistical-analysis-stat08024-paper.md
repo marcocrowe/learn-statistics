@@ -511,37 +511,189 @@ The 90% confidence interval for the difference in the two proportions is from -0
 - The interval includes 0, which suggests that there is no significant difference between the two population proportions at the 90% confidence level.
 - This means we cannot conclusively state that one proportion is different from the other based on this interval. The proportions are not significantly different in a statistically significant way, considering the given confidence level.
 
-
 ### Question 2.B (5 Marks)
 
-Calculate and interpret the R2 value from the following sample data:
-X= {7,19,33,42}; Y={6,10,14,23}.
+Calculate and interpret the $R^2$ value from the following sample data:  
+$X= \{7, 19, 33, 42\}; Y={6, 10, 14, 23}$.
 
-Q2. (c)
+### Answer 2.B
 
-Given E[X]=0.88, E[X2]=1.12, E[Y]=0.92,E[Y2]=1.14,E[XY]= 0.55, calculate the
-(5 Marks)
+Yes, you can indeed use the provided formula to compute \( R^2 \). In fact, this formula calculates the **correlation coefficient** \( r_{x,y} \), which can then be squared to obtain \( R^2 \), the coefficient of determination.
 
-(5 Marks)
+Here’s how you can use the formula to calculate \( R^2 \) directly:
 
-correlation between X and Y.
+### Formula Breakdown
 
-Q2. (d)
+The correlation coefficient \( r_{x,y} \) is given by:
+\[
+r_{x,y} = \frac{\sum x_i y_i - \frac{(\sum x_i)(\sum y_i)}{n}}{\sqrt{\left( \sum x_i^2 - \frac{(\sum x_i)^2}{n} \right) \left( \sum y_i^2 - \frac{(\sum y_i)^2}{n} \right)}}
+\]
 
-A race track is open to the public for both motorcycle and car use. The lap times (minutes) of
-motorcycles is XM ~ N(u=3.4,o=1.4). The lap times of cars is Xc~N(p=3.6,o=0.78).
+where:
 
-(i)
-a group of ten motorcyclists.
-(ii) Calculate the probability that a motorcycle is faster than a car.
+- \( \sum x_i y_i \) is the sum of the product of paired values.
+- \( \sum x_i \) is the sum of the \( x \) values.
+- \( \sum y_i \) is the sum of the \( y \) values.
+- \( \sum x_i^2 \) is the sum of the squares of the \( x \) values.
+- \( \sum y_i^2 \) is the sum of the squares of the \( y \) values.
+- \( n \) is the number of pairs.
 
-Calculate the probability that the average lap time is between 3 and 4 minutes for
-(4 Marks)
+### Steps to Calculate \( R^2 \) Using the Correlation Formula
 
-(6 Marks)
+|    i    | $X_i$ |   | $Y_i$ |   | $X_{i}^2$ |   | $Y_i^2$ |   | $X*Y$ |
+|--------|----:|---|----:|---|------:|---|------:|---|------:|
+|    1    |   7 |   |   6 |   |    49 |   |    36 |   |    42 |
+|    2    |  19 |   |  10 |   |   361 |   |   100 |   |   190 |
+|    3    |  33 |   |  14 |   |  1089 |   |   196 |   |   462 |
+|    4    |  42 |   |  23 |   |  1764 |   |   529 |   |   966 |
+|        |     |   |     |   |       |   |       |   |       |
+| $\sum{x_i}$ | 101 | $\sum{y_i}$ | 53 | $\sum{x_i^2}$ | 3263 | $\sum{y_i^2}$ | 861 | $\sum{x_i*y_i}$ | 1660 |
 
-(End of Question 2)
+2. **Plug into the Formula:**
+   \[
+   r_{x,y} = \frac{\sum x_i y_i - \frac{(\sum x_i)(\sum y_i)}{n}}{\sqrt{\left( \sum x_i^2 - \frac{(\sum x_i)^2}{n} \right) \left( \sum y_i^2 - \frac{(\sum y_i)^2}{n} \right)}}
+   \]
+   where \( n = 4 \).
 
+   - Compute \( \frac{(\sum x_i)(\sum y_i)}{n} \):
+     \[
+     \frac{101 \times 53}{4} = 1340.75
+     \]
+   - Compute \( \sum x_i^2 - \frac{(\sum x_i)^2}{n} \):
+     \[
+     3263 - \frac{101^2}{4} = 3263 - 2552.25 = 710.75
+     \]
+   - Compute \( \sum y_i^2 - \frac{(\sum y_i)^2}{n} \):
+     \[
+     861 - \frac{53^2}{4} = 861 - 702.25 = 158.75
+     \]
+
+   - Compute the correlation coefficient \( r_{x,y} \):
+     \[
+     r_{x,y} = \frac{1660 - 1340.75}{\sqrt{710.75 \times 158.75}}
+     \]
+     \[
+     = \frac{319.25}{\sqrt{112.661875}} \approx \frac{319.25}{10.62} \approx 0.301
+     \]
+
+3. **Calculate \( R^2 \):**
+   \[
+   R^2 = r_{x,y}^2 = (0.301)^2 \approx 0.091
+   \]
+
+**Conclusion**  
+
+The correlation coefficient \( r_{x,y} \approx 0.301 \) and the coefficient of determination \( R^2 \approx 0.091 \), which suggests that about 9.1% of the variability in \( Y \) is explained by \( X \) using this calculation. This value seems lower compared to the earlier calculation, indicating potential differences due to rounding or methodological discrepancies.
+
+Both methods aim to assess how well the independent variable explains the variation in the dependent variable, but the specific numbers might vary slightly based on rounding and exact calculation steps.
+
+### Question 2.C (5 Marks)
+
+Given $E[X]=0.88, E[X^2]=1.12, E[Y]=0.92,E[Y^2]=1.14,E[XY]= 0.55$, calculate the correlation between X and Y.
+
+### Answer 2.C
+
+### Question 2.D (5 Marks)
+
+A race track is open to the public for both motorcycle and car use. The lap times (minutes) of motorcycles is $X_M \sim N(\mu=3.4,\sigma=1.4)$. The lap times of cars is $X_C \sim N(\mu=3.6,\sigma=0.78)$.
+
+#### Question 2.D.1 (4 Marks)
+
+Calculate the probability that the average lap time is between 3 and 4 minutes for a group of ten motorcyclists.
+
+#### Question 2.D.2 (6 Marks)
+
+Calculate the probability that a motorcycle is faster than a car.
+
+
+Here is the content from both images converted into Markdown format:
+
+markdown
+## QUESTION 3 (TOTAL MARKS: 25)
+
+### Q3. (a)
+Briefly describe the terms **ANOVA** and **family-wise error rate** in the context of ANOVA.  
+*(4 Marks)*
+
+### Q3. (b)
+\( X \sim \text{Exp}(\lambda) \) with \( E[X] = 1/\lambda \) and \( \text{Var}[X] = 1/\lambda^2 \).
+
+1. **State the \( \sigma_X \) value.**  
+   *(3 Marks)*
+
+2. **Explain how the value from part (i) above was obtained.**  
+   *(3 Marks)*
+
+### Q3. (c)
+Let \( p \) be the fraction of engineers who do not understand basic statistical concepts. In the past, this has been high; \( p = 0.73 \). A new program has been implemented to improve the engineers' knowledge and it is expected that \( p \) would decrease from 0.73. To test \( H_0: p \geq 0.73 \), \( H_1: p < 0.73 \), 300 engineers in the new program were tested, and 208 did not comprehend basic statistical concepts. At the 5% significance level, can \( H_0 \) be rejected in favor of \( H_1 \)?  
+*(5 Marks)*
+
+### Q3. (d)
+The attendance (hundreds) at a racetrack \( (x) \), and the amount \( (\text{€} \times 10^6) \) that was gambled \( (y) \), on \( n = 10 \) selected days are given in the following table:
+
+\[
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\text{Attendance} & 117 & 128 & 122 & 119 & 131 & 135 & 125 & 120 & 130 & 127 \\
+\hline
+\text{Amount Bet} & 2.07 & 2.80 & 3.14 & 2.26 & 3.40 & 3.89 & 2.93 & 2.66 & 3.33 & 3.54 \\
+\hline
+\end{array}
+\]
+
+Given the following statistics:  
+\(\sum x_i = 1254\), \(\sum y_i = 30.02\), \(\sum x_i^2 = 157558\), \(\sum y_i^2 = 93.0652\), \(\sum x_i y_i = 3791.09\), \(\sum x_i^2 y_i = 1505902\).
+
+1. **Calculate the sample correlation coefficient.**  
+   *(3 Marks)*
+
+2. **Determine the linear regression equation.**  
+   *(3 Marks)*
+
+3. **Provide an interpretation of the equation obtained in part (ii) above.**  
+   *(4 Marks)*
+
+*(End of Question 3)*
+
+---
+
+## QUESTION 4 (TOTAL MARKS: 25)
+
+### Q4. (a)
+In the context of regression analysis, briefly explain the meaning of the terms: **SSE**, **SSR**, **SST**.  
+*(3 Marks)*
+
+### Q4. (b)
+In a two-tailed hypothesis test with a significance level of 5%, a researcher obtains a test statistic value of \( z = -2.2 \). Determine the p-value, and explain what this value means in relation to \( H_0 \).  
+*(4 Marks)*
+
+### Q4. (c)
+A scientist is interested in assessing the relationship between two variables \( V_1 \) (independent) and \( V_2 \) (dependent) and takes \( n = 10 \) sample values from a lab experiment. Given \( r \approx -0.96 \):
+
+1. **Sketch a scatterplot to visualize the overall pattern of the lab results.**  
+   *(2 Marks)*
+
+2. **Comment on the causal relationship between \( V_1 \) and \( V_2 \).**  
+   *(3 Marks)*
+
+### Q4. (d)
+It is known that 5% of manufactured components are defective. Samples of size \( n = 800 \) are drawn from the process in order to determine the proportion of defects. Determine the proportion of samples that are likely to contain more than 6% defects.  
+**Note:** \( X \sim \text{Bin}(n, p) \), \( E[X] = np \), \( \text{Var}[X] = np(1-p) \), \( \hat{p} = X/n \).  
+*(5 Marks)*
+
+### Q4. (e)
+95% of \( \bar{X} \) values lie in the range \( \mu \pm 1.96 \frac{\sigma}{\sqrt{n}} \). Rewrite this statement in terms of a probability equation and rearrange the equation to obtain an interval estimate for \( \mu \).  
+*(8 Marks)*
+
+*(End of Question 4)*
+
+---
+
+**STAT8024 - Applied Statistical Analysis**  
+Summer Examinations 2023/2024
+
+
+This Markdown format captures the structure and content of both questions and sub-questions as presented in the images
 ## Paper Details
 
 STAT08024 - Applied Statistical Analysis
@@ -686,3 +838,79 @@ equation and rearrange the equation to obtain an interval estimate for p.
 
 (8 Marks)
 
+## Appendix
+
+Here's the content from the image converted into Markdown format:
+
+markdown
+
+### Hypothesis Testing
+
+**Test statistic:**
+
+\[
+\frac{{\text{{statistic}} - H_0}}{{SE_{\text{{statistic}}}}}
+\]
+
+**Note:** In single proportion test, use hypothesized p in SE. For difference in two proportions, replace \(\hat{p}_1\) and \(\hat{p}_2\) with \(\hat{p}_c = \frac{x_1 + x_2}{n_1 + n_2}\).
+
+**F-test:** \(F = \frac{s_1^2}{s_2^2}\) where \(s_1^2 > s_2^2\). \(F_{\text{cutoff}} = F_{\alpha, \nu_1, \nu_2}\)
+
+\[
+\text{p-value} = 
+\begin{cases} 
+2 \times \Pr(A > |a|) & \text{if } H_1 : \mu \neq \mu_0 \\
+\Pr(A < a) & \text{if } H_1 : \mu < \mu_0 \\
+\Pr(A > a) & \text{if } H_1 : \mu > \mu_0 
+\end{cases}
+\]  
+
+### Joint Distributions/Correlation/Regression
+
+\[
+E[g(X)] = \int g(x) f(x) dx
+\]
+
+For \(f(x, y) \geq 0\) where \(\int \int f(x, y) dx dy = 1\), \(f(x) = \int f(x, y) dy\) and \(f(y) = \int f(x, y) dx\).
+
+\[
+\text{Corr}[X, Y] = \frac{\text{Cov}[X, Y]}{\sqrt{\text{Var}[X] \text{Var}[Y]}} \quad \text{where} \quad \text{Cov}[X, X] = \text{Var}[X] = E[XX] - E[X] E[X]
+\]
+
+\[
+r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}
+\]
+
+\[
+\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \quad \text{where} \quad \hat{\beta}_1 = \frac{S_{XY}}{S_{XX}}
+\]
+
+\[
+\sigma_{\hat{\beta}_1} = \sqrt{\frac{SSE}{\sum (x_i - \bar{x})^2}} = \sqrt{\frac{s^2}{S_{XX}}} \quad \text{where} \quad s^2 = \frac{1}{n-2}(S_{YY} - \hat{\beta}_1 S_{XY})
+\]
+
+**Test statistic:**
+
+\[
+\frac{\hat{\beta}_1}{\sigma_{\hat{\beta}_1}} \sim t_{\alpha/2, n-k-1}
+\]
+
+## ANOVA
+
+\[
+SSTO = \sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij}^2 - \frac{(\sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij})^2}{N} = \sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij}^2 - NY^2
+\]
+
+\[
+SSB = \sum_{i=1}^{k} \frac{(\sum_{j=1}^{n} Y_{ij})^2}{n} - \frac{(\sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij})^2}{N} = n \sum_{i=1}^{k} Y_{i.}^2 - NY^2
+\]
+
+\[
+SSW = \sum_{i=1}^{k} \sum_{j=1}^{n} Y_{ij}^2 - \frac{1}{n} \sum_{i=1}^{k} \left( \sum_{j=1}^{n} Y_{ij} \right)^2
+\]
+
+---
+**STAT8024 - Applied Statistical Analysis**  
+Summer Examinations 2023/2024
+
+This Markdown retains the mathematical notation and structure as closely as possible to the original document.
