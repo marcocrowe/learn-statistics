@@ -504,7 +504,7 @@ $0.0076 + 0.1061 \approx 0.1137$
 **Final Confidence Interval**  
 $$\boxed{(-0.0985, 0.1137)}$$
 
-The 90% confidence interval for the difference in the two proportions is from -0.0985 to 0.1137. 
+The 90% confidence interval for the difference in the two proportions is from -0.0985 to 0.1137.
 
 **Comment on the Population Proportions:**
 
