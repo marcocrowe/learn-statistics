@@ -61,7 +61,7 @@ Identify the parameter and statistic - give the symbol and value for both.
 The melting points (C) of n=50 alloy filaments is investigated yielding T= 320.1 and
 s = 6.75. Calculate a 95% confidence interval for the mean melting point p.
 
-#### Answer 1.B
+### Answer 1.B
 
 <details>
 <summary>Choosing a Distribution</summary>
@@ -179,86 +179,86 @@ To solve the questions, we'll use the properties of the normal distribution.
    Since the distribution of weights is $N(500, 2.1)$, we want to find $P(X > 500)$.
 
    We can standardize this to the standard normal distribution:
-   \[
+   $$
    Z = \frac{X - \mu}{\sigma}
-   \]
-   where $X$ is the weight of a box, \(\mu = 500\), and \(\sigma = \sqrt{2.1}\).
+   $$
+   where $X$ is the weight of a box, $\mu = 500$, and $\sigma = \sqrt{2.1}$.
 
    For $X = 500$:
-   \[
+   $$
    Z = \frac{500 - 500}{\sqrt{2.1}} = \frac{0}{\sqrt{2.1}} = 0
-   \]
+   $$
 
-   The standard normal variable $Z$ for $X = 500$ is 0. 
+   The standard normal variable $Z$ for $X = 500$ is 0.  
 
    The probability that $X$ is greater than 500 grams is:
-   \[
+   $$
    P(X > 500) = P(Z > 0)
-   \]
+   $$
 
 2. **Use the standard normal distribution:**
 
    In the standard normal distribution, $P(Z > 0)$ is 0.5, because the normal distribution is symmetric around 0.
 
    Therefore:
-   \[
+   $$
    P(X > 500) = 0.5
-   \]
+   $$
 
 3. **Convert to percentage:**
 
-   \[
+   $$
    \text{Percentage} = 0.5 \times 100\% = 50\%
-   \]
+   $$
 
    **Answer 1.C.1:** 50% of the boxes have cereal weighing over 500g.
 
 ### Question 1.C.2
 
-**If $n = 5$ boxes are selected at random, compute $Pr(\overline{X} \leq 499.5)$.**
+If $n = 5$ boxes are selected at random, compute $Pr(\overline{X} \leq 499.5)$.
 
 1. **Determine the distribution of the sample mean:**
 
-   The sample mean \(\overline{X}\) for \(n\) boxes follows a normal distribution:
-   \[
+   The sample mean $\overline{X}$ for $n$ boxes follows a normal distribution:
+   $$
    \overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)
-   \]
+   $$
 
-   Given \(\mu = 500\), \(\sigma^2 = 2.1\), and \(n = 5\):
-   \[
+   Given $\mu = 500$, $\sigma^2 = 2.1$, and $n = 5$:
+   $$
    \overline{X} \sim N\left(500, \frac{2.1}{5}\right)
-   \]
+   $$
 
-   The variance of \(\overline{X}\) is \(\frac{2.1}{5}\) and the standard deviation is \(\sqrt{\frac{2.1}{5}}\).
+   The variance of $\overline{X}$ is $\frac{2.1}{5}$ and the standard deviation is $\sqrt{\frac{2.1}{5}}$.
 
-   \[
+   $$
    \sigma_{\overline{X}} = \sqrt{\frac{2.1}{5}} \approx \sqrt{0.42} \approx 0.648
-   \]
+   $$
 
 2. **Standardize the sample mean:**
 
    We need to find:
-   \[
+   $$
    P(\overline{X} \leq 499.5)
-   \]
+   $$
 
    Standardize this to the standard normal distribution:
-   \[
+   $$
    Z = \frac{\overline{X} - \mu}{\sigma_{\overline{X}}}
-   \]
+   $$
 
-   For \(\overline{X} = 499.5\):
-   \[
+   For $\overline{X} = 499.5$:
+   $$
    Z = \frac{499.5 - 500}{0.648} \approx \frac{-0.5}{0.648} \approx -0.771
-   \]
+   $$
 
 3. **Use the standard normal distribution:**
 
    Find the probability $P(Z \leq -0.771)$ using the standard normal distribution table or a calculator:
 
-   \[
+   $$
    P(Z \leq -0.771) \approx 0.220
-   \]
+   $$
 
    **Answer 1.C.2:** $Pr(\overline{X} \leq 499.5) \approx 0.220$ or 22.0%.
 
@@ -268,78 +268,80 @@ $A \sim t_{11}. \text {Given }\Gamma(5.5)=52.34$, calculate $f(a=1)$.
 
 ### Answer 1.D
 
-Sure, let's format the calculations correctly and ensure the steps are clear for the PDF calculation of the t-distribution at \(a = 1\) with 11 degrees of freedom.
+Sure, let's format the calculations correctly and ensure the steps are clear for the PDF calculation of the t-distribution at $a = 1$ with 11 degrees of freedom.
 
-### Calculation of the PDF for \(A \sim t_{11}\) at \(a = 1\)
+### Calculation of the PDF for $A \sim t_{11}$ at $a = 1$
 
-The probability density function (PDF) of the t-distribution with \(\nu\) degrees of freedom is given by:
+The probability density function (PDF) of the t-distribution with $\nu$ degrees of freedom is given by:
 
-\[
+$$
 f(a) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu \pi} \Gamma\left(\frac{\nu}{2}\right)} \left(1 + \frac{a^2}{\nu}\right)^{-\frac{\nu + 1}{2}}
-\]
+$$
 
 Given:
-- Degrees of freedom \(\nu = 11\)
-- We need to calculate \(f(a = 1)\)
+
+- Degrees of freedom $\nu = 11$
+- We need to calculate $f(a = 1)$
 
 ### Step 1: Substitute into the formula
 
-The PDF at \(a = 1\) is:
+The PDF at $a = 1$ is:
 
-\[
+$$
 f(1) = \frac{\Gamma\left(\frac{11 + 1}{2}\right)}{\sqrt{11 \pi} \Gamma\left(\frac{11}{2}\right)} \left(1 + \frac{1^2}{11}\right)^{-\frac{11 + 1}{2}}
-\]
+$$
 
 Simplify to:
 
-\[
+$$
 f(1) = \frac{\Gamma(6)}{\sqrt{11 \pi} \Gamma(5.5)} \left(\frac{12}{11}\right)^{-6}
-\]
+$$
 
 ### Step 2: Use the provided values
 
 We are given:
-- \(\Gamma(5.5) = 52.34\)
+
+- $\Gamma(5.5) = 52.34$
 - $\Gamma(x) = (x-1)!$ for integer x
-- \(\Gamma(6) = 5! = 120\)
+- $\Gamma(6) = 5! = 120$
 
 ### Step 3: Compute the value
 
-1. **Calculate \(\sqrt{11 \pi}\)**
+1. **Calculate $\sqrt{11 \pi}$**
 
-   \[
+   $$
    \sqrt{11 \pi} = \sqrt{11 \times 3.1416} \approx \sqrt{34.5576} \approx 5.879
-   \]
+   $$
 
-2. **Calculate \(\left(\frac{12}{11}\right)^{-6}\)**
+2. **Calculate $\left(\frac{12}{11}\right)^{-6}$**
 
-   \[
+   $$
    \frac{12}{11} \approx 1.0909
-   \]
-   \[
+   $$
+   $$
    \left(\frac{12}{11}\right)^{-6} \approx \left(1.0909\right)^{-6} \approx 0.665
-   \]
+   $$
 
 3. **Substitute into the PDF formula**
 
-   \[
+   $$
    f(1) = \frac{120}{5.879 \times 52.34} \times 0.665
-   \]
+   $$
 
    Calculate the denominator:
 
-   \[
+   $$
    5.879 \times 52.34 \approx 307.47
-   \]
+   $$
 
    Then:
 
-   \[
+   $$
    \frac{120}{307.47} \approx 0.389
-   \]
-   \[
+   $$
+   $$
    f(1) = 0.389 \times 0.665 \approx 0.259
-   \]
+   $$
 
 $$\boxed{f(1) \approx 0.259}$$
 
@@ -356,7 +358,7 @@ Complete the table and calculate $p(x=1), p(y=1)$
 
 ### Answer 1.E
 
-To complete the joint distribution table and calculate the marginal probabilities \( p(x=1) \) and \( p(y=1) \), follow these steps:
+To complete the joint distribution table and calculate the marginal probabilities $p(x=1)$ and $p(y=1)$, follow these steps:
 
 1. **Complete the Joint Distribution Table**
 
@@ -369,33 +371,33 @@ To complete the joint distribution table and calculate the marginal probabilitie
 
    The sum of all joint probabilities should be 1:
 
-   \[
+   $$
    \text{Sum} = 0.1 + ? + 0.25 + 0.05 + 0.15 + 0.25
-   \]
+   $$
 
    First, calculate the sum of known values:
 
-   \[
+   $$
    0.1 + 0.25 + 0.05 + 0.15 + 0.25 = 0.8
-   \]
+   $$
 
-   So, the sum of the unknown value \( ? \) should be:
+   So, the sum of the unknown value $?$ should be:
 
-   \[
+   $$
    1 - 0.8 = 0.2
-   \]
+   $$
 
    Since the joint distribution table should sum to 1, and we have:
 
-   \[
+   $$
    0.1 + ? + 0.25 + 0.05 + 0.15 + 0.25 = 1
-   \]
+   $$
 
-   The value of \( ? \) is:
+   The value of $?$ is:
 
-   \[
+   $$
    ? = 0.2
-   \]
+   $$
 
    | p(x,y) | x=0  | x=1  | x=2  |          |
    |--------|------|------|------|----------|
@@ -427,29 +429,29 @@ $0.1+x+0.25 = 0.55 \therefore x = 0.2$
 
 1. **Calculate Marginal Probabilities**
 
-   - **For \( p(x=1) \):**
+   - **For $p(x=1)$:**
 
-     \[
+     $$
      p(x=1) = p(x=1, y=0) + p(x=1, y=1) + p(x=1, y=2)
-     \]
+     $$
 
      Substituting the values:
 
-     \[
+     $$
      p(x=1) = 0.05 + 0.15 + 0.25 = 0.45
-     \]
+     $$
 
-   - **For \( p(y=1) \):**
+   - **For $p(y=1)$:**
 
-     \[
+     $$
      p(y=1) = p(x=0, y=1) + p(x=1, y=1)
-     \]
+     $$
 
      Substituting the values:
 
-     \[
+     $$
      p(y=1) = 0.2 + 0.15 = 0.35
-     \]
+     $$
 
 ### Summary
 
@@ -462,8 +464,8 @@ $0.1+x+0.25 = 0.55 \therefore x = 0.2$
 
 - The marginal probabilities are:
 
-  - \( p(x=1) = 0.45 \)
-  - \( p(y=1) = 0.35 \)
+  - $p(x=1) = 0.45$
+  - $p(y=1) = 0.35$
 
 ## Question 2
 
@@ -479,8 +481,8 @@ To calculate a 90% confidence interval for the difference in two proportions, we
 
 Given:
 
-- \( n_1 = 110 \) and \( x_1 = 65 \) for the first sample
-- \( n_2 = 120 \) and \( x_2 = 70 \) for the second sample
+- $n_1 = 110$ and $x_1 = 65$ for the first sample
+- $n_2 = 120$ and $x_2 = 70$ for the second sample
 
 The sample proportions are:
 
@@ -503,7 +505,7 @@ $\text{SE} = \sqrt{\frac{0.2418}{110} + \frac{0.2421}{120}}$
 $\text{SE} = \sqrt{0.002198 + 0.002017}$  
 $\text{SE} \approx \sqrt{0.004215} \approx 0.0649$  
 
-**Step 4: Determine the Critical Value**
+**Step 4: Determine the Critical Value**  
 
 For a 90% confidence interval, the critical value ($z_{\alpha/2}$) is approximately 1.645. given from the standard normal distribution table.
 
@@ -535,27 +537,27 @@ $X= \{7, 19, 33, 42\}; Y={6, 10, 14, 23}$.
 
 ### Answer 2.B
 
-Yes, you can indeed use the provided formula to compute \( R^2 \). In fact, this formula calculates the **correlation coefficient** \( r_{x,y} \), which can then be squared to obtain \( R^2 \), the coefficient of determination.
+Yes, you can indeed use the provided formula to compute $R^2$. In fact, this formula calculates the **correlation coefficient** $r_{x,y}$, which can then be squared to obtain $R^2$, the coefficient of determination.
 
-Here’s how you can use the formula to calculate \( R^2 \) directly:
+Here’s how you can use the formula to calculate $R^2$ directly:
 
 ### Formula Breakdown
 
-The correlation coefficient \( r_{x,y} \) is given by:
-\[
+The correlation coefficient $r_{x,y}$ is given by:
+$$
 r_{x,y} = \frac{\sum x_i y_i - \frac{(\sum x_i)(\sum y_i)}{n}}{\sqrt{\left( \sum x_i^2 - \frac{(\sum x_i)^2}{n} \right) \left( \sum y_i^2 - \frac{(\sum y_i)^2}{n} \right)}}
-\]
+$$
 
 where:
 
-- \( \sum x_i y_i \) is the sum of the product of paired values.
-- \( \sum x_i \) is the sum of the \( x \) values.
-- \( \sum y_i \) is the sum of the \( y \) values.
-- \( \sum x_i^2 \) is the sum of the squares of the \( x \) values.
-- \( \sum y_i^2 \) is the sum of the squares of the \( y \) values.
-- \( n \) is the number of pairs.
+- $\sum x_i y_i$ is the sum of the product of paired values.
+- $\sum x_i$ is the sum of the $x$ values.
+- $\sum y_i$ is the sum of the $y$ values.
+- $\sum x_i^2$ is the sum of the squares of the $x$ values.
+- $\sum y_i^2$ is the sum of the squares of the $y$ values.
+- $n$ is the number of pairs.
 
-### Steps to Calculate \( R^2 \) Using the Correlation Formula
+### Steps to Calculate $R^2$ Using the Correlation Formula
 
 | i           | $X_i$ |             | $Y_i$ |               | $X_{i}^2$ |               | $Y_i^2$ |                 | $X*Y$ |
 |-------------|------:|-------------|------:|---------------|----------:|---------------|--------:|-----------------|------:|
@@ -566,41 +568,33 @@ where:
 |             |       |             |       |               |           |               |         |                 |       |
 | $\sum{x_i}$ |   101 | $\sum{y_i}$ |    53 | $\sum{x_i^2}$ |      3263 | $\sum{y_i^2}$ |     861 | $\sum{x_i*y_i}$ |  1660 |
 
-2. **Plug into the Formula:**
-   \[
-   r_{x,y} = \frac{\sum x_i y_i - \frac{(\sum x_i)(\sum y_i)}{n}}{\sqrt{\left( \sum x_i^2 - \frac{(\sum x_i)^2}{n} \right) \left( \sum y_i^2 - \frac{(\sum y_i)^2}{n} \right)}}
-   \]
-   where \( n = 4 \).
+**Plug into the Formula:**
+   $$r_{x,y} = \frac{\sum x_i y_i - \frac{(\sum x_i)(\sum y_i)}{n}}{\sqrt{\left( \sum x_i^2 - \frac{(\sum x_i)^2}{n} \right) \left( \sum y_i^2 - \frac{(\sum y_i)^2}{n} \right)}}$$
+   where $n = 4$.
 
-   - Compute \( \frac{(\sum x_i)(\sum y_i)}{n} \):
-     \[
-     \frac{101 \times 53}{4} = 1340.75
-     \]
-   - Compute \( \sum x_i^2 - \frac{(\sum x_i)^2}{n} \):
-     \[
-     3263 - \frac{101^2}{4} = 3263 - 2552.25 = 710.75
-     \]
-   - Compute \( \sum y_i^2 - \frac{(\sum y_i)^2}{n} \):
-     \[
-     861 - \frac{53^2}{4} = 861 - 702.25 = 158.75
-     \]
-
-   - Compute the correlation coefficient \( r_{x,y} \):
-     \[
+- Compute $\frac{(\sum x_i)(\sum y_i)}{n}$:
+   $$\frac{101 \times 53}{4} = 1340.75$$
+  - Compute $\sum x_i^2 - \frac{(\sum x_i)^2}{n}$:
+    $$3263 - \frac{101^2}{4} = 3263 - 2552.25 = 710.75$$
+  - Compute $\sum y_i^2 - \frac{(\sum y_i)^2}{n}$:
+    $$
+    861 - \frac{53^2}{4} = 861 - 702.25 = 158.75
+    $$
+  - Compute the correlation coefficient $r_{x,y}$:
+     $$
      r_{x,y} = \frac{1660 - 1340.75}{\sqrt{710.75 \times 158.75}}
-     \]
-     \[
+     $$
+     $$
      = \frac{319.25}{\sqrt{112.661875}} \approx \frac{319.25}{10.62} \approx 0.301
-     \]
+     $$
 
-3. **Calculate \( R^2 \):**
-   \[
-   R^2 = r_{x,y}^2 = (0.301)^2 \approx 0.091
-   \]
+**Calculate $R^2$:**  
+
+$R^2 = r_{x,y}^2 = (0.301)^2 \approx 0.091$
 
 **Conclusion**  
 
-The correlation coefficient \( r_{x,y} \approx 0.301 \) and the coefficient of determination \( R^2 \approx 0.091 \), which suggests that about 9.1% of the variability in \( Y \) is explained by \( X \) using this calculation. This value seems lower compared to the earlier calculation, indicating potential differences due to rounding or methodological discrepancies.
+The correlation coefficient $r_{x,y} \approx 0.301$ and the coefficient of determination $R^2 \approx 0.091$, which suggests that about 9.1% of the variability in $Y$ is explained by $X$ using this calculation. This value seems lower compared to the earlier calculation, indicating potential differences due to rounding or methodological discrepancies.
 
 Both methods aim to assess how well the independent variable explains the variation in the dependent variable, but the specific numbers might vary slightly based on rounding and exact calculation steps.
 
@@ -622,7 +616,6 @@ Calculate the probability that the average lap time is between 3 and 4 minutes f
 
 Calculate the probability that a motorcycle is faster than a car.
 
-
 Here is the content from both images converted into Markdown format:
 
 markdown
@@ -635,33 +628,37 @@ Briefly describe the terms **ANOVA** and **family-wise error rate** in the conte
 
 ### Question 3.B (6 Marks)
 
-\( X \sim \text{Exp}(\lambda) \) with \( E[X] = 1/\lambda \) and \( \text{Var}[X] = 1/\lambda^2 \).
+$X \sim \text{Exp}(\lambda)$ with $E[X] = 1/\lambda$ and $\text{Var}[X] = 1/\lambda^2$.
 
-1. **State the \( \sigma_X \) value.**  
+1. **State the $\sigma_X$ value.**  
    *(3 Marks)*
 
 2. **Explain how the value from part (i) above was obtained.**  
    *(3 Marks)*
 
 ### Q3. (c)
-Let \( p \) be the fraction of engineers who do not understand basic statistical concepts. In the past, this has been high; \( p = 0.73 \). A new program has been implemented to improve the engineers' knowledge and it is expected that \( p \) would decrease from 0.73. To test \( H_0: p \geq 0.73 \), \( H_1: p < 0.73 \), 300 engineers in the new program were tested, and 208 did not comprehend basic statistical concepts. At the 5% significance level, can \( H_0 \) be rejected in favor of \( H_1 \)?  
+
+Let $p$ be the fraction of engineers who do not understand basic statistical concepts. In the past, this has been high; $p = 0.73$. A new program has been implemented to improve the engineers' knowledge and it is expected that $p$ would decrease from 0.73. To test $H_0: p \geq 0.73$, $H_1: p < 0.73$, 300 engineers in the new program were tested, and 208 did not comprehend basic statistical concepts. At the 5% significance level, can $H_0$ be rejected in favor of $H_1$?  
 *(5 Marks)*
 
-### Q3. (d)
-The attendance (hundreds) at a racetrack \( (x) \), and the amount \( (\text{€} \times 10^6) \) that was gambled \( (y) \), on \( n = 10 \) selected days are given in the following table:
+### Question 3.D
 
-\[
-\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}
+The attendance (hundreds) at a racetrack $(x)$, and the amount $(\text{€} \times 10^6)$ that was gambled $(y)$, on $n = 10$ selected days are given in the following table:
+
+| Attendance |  117 | 128  | 122  | 119  | 131  | 135  | 125  | 120  | 130  | 127  |
+|------------|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
+| Amount Bet | 2.07 | 2.80 | 3.14 | 2.26 | 3.40 | 3.89 | 2.93 | 2.66 | 3.33 | 3.54 |
+
+$$\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
 \text{Attendance} & 117 & 128 & 122 & 119 & 131 & 135 & 125 & 120 & 130 & 127 \\
 \hline
 \text{Amount Bet} & 2.07 & 2.80 & 3.14 & 2.26 & 3.40 & 3.89 & 2.93 & 2.66 & 3.33 & 3.54 \\
 \hline
-\end{array}
-\]
+\end{array}$$
 
 Given the following statistics:  
-\(\sum x_i = 1254\), \(\sum y_i = 30.02\), \(\sum x_i^2 = 157558\), \(\sum y_i^2 = 93.0652\), \(\sum x_i y_i = 3791.09\), \(\sum x_i^2 y_i = 1505902\).
+$\sum x_i = 1254$, $\sum y_i = 30.02$, $\sum x_i^2 = 157558$, $\sum y_i^2 = 93.0652$, $\sum x_i y_i = 3791.09$, $\sum x_i^2 y_i = 1505902$.
 
 1. **Calculate the sample correlation coefficient.**  
    *(3 Marks)*
@@ -672,40 +669,44 @@ Given the following statistics:
 3. **Provide an interpretation of the equation obtained in part (ii) above.**  
    *(4 Marks)*
 
-*(End of Question 3)*
+*(End of Question 3)*  
 
 ---
 
 ## Question 4 [TOTAL MARKS: 25]
 
 ### Q4. (a)
+
 In the context of regression analysis, briefly explain the meaning of the terms: **SSE**, **SSR**, **SST**.  
 *(3 Marks)*
 
 ### Q4. (b)
-In a two-tailed hypothesis test with a significance level of 5%, a researcher obtains a test statistic value of \( z = -2.2 \). Determine the p-value, and explain what this value means in relation to \( H_0 \).  
+
+In a two-tailed hypothesis test with a significance level of 5%, a researcher obtains a test statistic value of $z = -2.2$. Determine the p-value, and explain what this value means in relation to $H_0$.  
 *(4 Marks)*
 
 ### Q4. (c)
-A scientist is interested in assessing the relationship between two variables \( V_1 \) (independent) and \( V_2 \) (dependent) and takes \( n = 10 \) sample values from a lab experiment. Given \( r \approx -0.96 \):
 
-1. **Sketch a scatterplot to visualize the overall pattern of the lab results.**  
+A scientist is interested in assessing the relationship between two variables $V_1$ (independent) and $V_2$ (dependent) and takes $n = 10$ sample values from a lab experiment. Given $r \approx -0.96$:
+
+1. **Sketch a scatter-plot to visualize the overall pattern of the lab results.**  
    *(2 Marks)*
 
-2. **Comment on the causal relationship between \( V_1 \) and \( V_2 \).**  
+2. **Comment on the causal relationship between $V_1$ and $V_2$.**  
    *(3 Marks)*
 
 ### Q4. (d)
-It is known that 5% of manufactured components are defective. Samples of size \( n = 800 \) are drawn from the process in order to determine the proportion of defects. Determine the proportion of samples that are likely to contain more than 6% defects.  
-**Note:** \( X \sim \text{Bin}(n, p) \), \( E[X] = np \), \( \text{Var}[X] = np(1-p) \), \( \hat{p} = X/n \).  
+
+It is known that 5% of manufactured components are defective. Samples of size $n = 800$ are drawn from the process in order to determine the proportion of defects. Determine the proportion of samples that are likely to contain more than 6% defects.  
+**Note:** $X \sim \text{Bin}(n, p)$, $E[X] = np$, $\text{Var}[X] = np(1-p)$, $\hat{p} = X/n$.  
 *(5 Marks)*
 
 ### Q4. (e)
-95% of \( \bar{X} \) values lie in the range \( \mu \pm 1.96 \frac{\sigma}{\sqrt{n}} \). Rewrite this statement in terms of a probability equation and rearrange the equation to obtain an interval estimate for \( \mu \).  
+
+95% of $\bar{X}$ values lie in the range $\mu \pm 1.96 \frac{\sigma}{\sqrt{n}}$. Rewrite this statement in terms of a probability equation and rearrange the equation to obtain an interval estimate for $\mu$.  
 *(8 Marks)*
 
 *(End of Question 4)*
-
 
 (TOTAL MARKS: 25)
 
@@ -781,9 +782,6 @@ The attendance (hundreds) at a racetrack (x), and the amount (€x106) that was 
 135
 3.89
 
-Given the following statistics: Xxi = 1254, Lyi =30.02, Xx2 = 157558
-Ly? = 93.0652, Xxiyi = 3791.09, E x?y? = [REDACTED]
-
 Calculate the sample correlation coefficient.
 
 Determine the linear regression equation.
@@ -822,7 +820,7 @@ and V2 (dependent) and takes n = 10 sample values from a lab experiment. Given r
 
 (4 Marks)
 
-Sketch a scatterplot to visualise the overall pattern of the lab results. (2 Marks)
+Sketch a scatter-plot to visualise the overall pattern of the lab results. (2 Marks)
 Comment on the causal relationship between V1 and V2.
 
 (3 Marks)
@@ -855,66 +853,49 @@ markdown
 
 **Test statistic:**
 
-\[
+$$
 \frac{{\text{{statistic}} - H_0}}{{SE_{\text{{statistic}}}}}
-\]
+$$
 
-**Note:** In single proportion test, use hypothesized p in SE. For difference in two proportions, replace \(\hat{p}_1\) and \(\hat{p}_2\) with \(\hat{p}_c = \frac{x_1 + x_2}{n_1 + n_2}\).
+**Note:** In single proportion test, use hypothesized p in SE. For difference in two proportions, replace $\hat{p}_1$ and $\hat{p}_2$ with $\hat{p}_c = \frac{x_1 + x_2}{n_1 + n_2}$.
 
-**F-test:** \(F = \frac{s_1^2}{s_2^2}\) where \(s_1^2 > s_2^2\). \(F_{\text{cutoff}} = F_{\alpha, \nu_1, \nu_2}\)
+**F-test:** $F = \frac{s_1^2}{s_2^2}$ where $s_1^2 > s_2^2$. $F_{\text{cutoff}} = F_{\alpha, \nu_1, \nu_2}$
 
-\[
-\text{p-value} = 
-\begin{cases} 
+$$\text{p-value} =
+\begin{cases}
 2 \times \Pr(A > |a|) & \text{if } H_1 : \mu \neq \mu_0 \\
 \Pr(A < a) & \text{if } H_1 : \mu < \mu_0 \\
-\Pr(A > a) & \text{if } H_1 : \mu > \mu_0 
-\end{cases}
-\]  
+\Pr(A > a) & \text{if } H_1 : \mu > \mu_0
+\end{cases}$$  
 
 ### Joint Distributions/Correlation/Regression
 
-\[
+$$
 E[g(X)] = \int g(x) f(x) dx
-\]
+$$
 
-For \(f(x, y) \geq 0\) where \(\int \int f(x, y) dx dy = 1\), \(f(x) = \int f(x, y) dy\) and \(f(y) = \int f(x, y) dx\).
+For $f(x, y) \geq 0$ where $\int \int f(x, y) dx dy = 1$, $f(x) = \int f(x, y) dy$ and $f(y) = \int f(x, y) dx$.
 
-\[
-\text{Corr}[X, Y] = \frac{\text{Cov}[X, Y]}{\sqrt{\text{Var}[X] \text{Var}[Y]}} \quad \text{where} \quad \text{Cov}[X, X] = \text{Var}[X] = E[XX] - E[X] E[X]
-\]
+$$\text{Corr}[X, Y] = \frac{\text{Cov}[X, Y]}{\sqrt{\text{Var}[X] \text{Var}[Y]}} \quad \text{where} \quad \text{Cov}[X, X] = \text{Var}[X] = E[XX] - E[X] E[X]
+$$
 
-\[
-r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}
-\]
+$$r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}$$
 
-\[
-\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \quad \text{where} \quad \hat{\beta}_1 = \frac{S_{XY}}{S_{XX}}
-\]
+$$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \quad \text{where} \quad \hat{\beta}_1 = \frac{S_{XY}}{S_{XX}}$$
 
-\[
-\sigma_{\hat{\beta}_1} = \sqrt{\frac{SSE}{\sum (x_i - \bar{x})^2}} = \sqrt{\frac{s^2}{S_{XX}}} \quad \text{where} \quad s^2 = \frac{1}{n-2}(S_{YY} - \hat{\beta}_1 S_{XY})
-\]
+$$\sigma_{\hat{\beta}_1} = \sqrt{\frac{SSE}{\sum (x_i - \bar{x})^2}} = \sqrt{\frac{s^2}{S_{XX}}} \quad \text{where} \quad s^2 = \frac{1}{n-2}(S_{YY} - \hat{\beta}_1 S_{XY})$$
 
 **Test statistic:**
 
-\[
-\frac{\hat{\beta}_1}{\sigma_{\hat{\beta}_1}} \sim t_{\alpha/2, n-k-1}
-\]
+$$\frac{\hat{\beta}_1}{\sigma_{\hat{\beta}_1}} \sim t_{\alpha/2, n-k-1}$$
 
 ## ANOVA
 
-\[
-SSTO = \sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij}^2 - \frac{(\sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij})^2}{N} = \sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij}^2 - NY^2
-\]
+$$SSTO = \sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij}^2 - \frac{(\sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij})^2}{N} = \sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij}^2 - NY^2$$
 
-\[
-SSB = \sum_{i=1}^{k} \frac{(\sum_{j=1}^{n} Y_{ij})^2}{n} - \frac{(\sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij})^2}{N} = n \sum_{i=1}^{k} Y_{i.}^2 - NY^2
-\]
+$$SSB = \sum_{i=1}^{k} \frac{(\sum_{j=1}^{n} Y_{ij})^2}{n} - \frac{(\sum_{i=1}^{n} \sum_{j=1}^{k} Y_{ij})^2}{N} = n \sum_{i=1}^{k} Y_{i.}^2 - NY^2$$
 
-\[
-SSW = \sum_{i=1}^{k} \sum_{j=1}^{n} Y_{ij}^2 - \frac{1}{n} \sum_{i=1}^{k} \left( \sum_{j=1}^{n} Y_{ij} \right)^2
-\]
+$$SSW = \sum_{i=1}^{k} \sum_{j=1}^{n} Y_{ij}^2 - \frac{1}{n} \sum_{i=1}^{k} \left( \sum_{j=1}^{n} Y_{ij} \right)^2$$
 
 ## Paper College Details
 
