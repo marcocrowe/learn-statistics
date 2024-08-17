@@ -1,7 +1,26 @@
 
-# Applied Statistical Analysis - (STAT08024) - 2024 - Summer  Paper
+# Applied Statistical Analysis - STAT08024 - 2024 - Summer  Paper
 
-## Question 1
+## Instructions
+
+**Time Allowed:** 2.5 hours  
+
+**Instructions:**  
+
+1. Answer all (4) questions.
+2. All questions carry equal marks.
+3. Marks for each section within a question are shown in bold font.
+4. Additional formulae are given in the appendices.
+
+The use of programmable or text storing calculators is expressly forbidden.  
+
+**Requirements for this paper:**  
+
+1. Mathematical Log Tables
+2. Calculators
+3. Statistical Tables
+
+## Question 1 [Total Marks: 25]
 
 ### Question 1.A
 
@@ -136,12 +155,10 @@ $[318.18, 322.02]$
 
 $\text{The 95\% confidence interval for the mean melting point is \boxed{[318.18, 322.02]}}$
 
-### Question 1.C (5 Marks)
+### Question 1.C
 
 A cereal manufacturer packages cereal in boxes with a 500g label weight. Suppose that the
 actual distribution of weights is $N(\mu = 500, \sigma^2 = 2.1)$.
-
-#### Answer 1.C
 
 #### Question 1.C.1 (3 Marks)
 
@@ -540,14 +557,14 @@ where:
 
 ### Steps to Calculate \( R^2 \) Using the Correlation Formula
 
-|    i    | $X_i$ |   | $Y_i$ |   | $X_{i}^2$ |   | $Y_i^2$ |   | $X*Y$ |
-|--------|----:|---|----:|---|------:|---|------:|---|------:|
-|    1    |   7 |   |   6 |   |    49 |   |    36 |   |    42 |
-|    2    |  19 |   |  10 |   |   361 |   |   100 |   |   190 |
-|    3    |  33 |   |  14 |   |  1089 |   |   196 |   |   462 |
-|    4    |  42 |   |  23 |   |  1764 |   |   529 |   |   966 |
-|        |     |   |     |   |       |   |       |   |       |
-| $\sum{x_i}$ | 101 | $\sum{y_i}$ | 53 | $\sum{x_i^2}$ | 3263 | $\sum{y_i^2}$ | 861 | $\sum{x_i*y_i}$ | 1660 |
+| i           | $X_i$ |             | $Y_i$ |               | $X_{i}^2$ |               | $Y_i^2$ |                 | $X*Y$ |
+|-------------|------:|-------------|------:|---------------|----------:|---------------|--------:|-----------------|------:|
+| 1           |     7 |             |     6 |               |        49 |               |      36 |                 |    42 |
+| 2           |    19 |             |    10 |               |       361 |               |     100 |                 |   190 |
+| 3           |    33 |             |    14 |               |      1089 |               |     196 |                 |   462 |
+| 4           |    42 |             |    23 |               |      1764 |               |     529 |                 |   966 |
+|             |       |             |       |               |           |               |         |                 |       |
+| $\sum{x_i}$ |   101 | $\sum{y_i}$ |    53 | $\sum{x_i^2}$ |      3263 | $\sum{y_i^2}$ |     861 | $\sum{x_i*y_i}$ |  1660 |
 
 2. **Plug into the Formula:**
    \[
@@ -609,13 +626,15 @@ Calculate the probability that a motorcycle is faster than a car.
 Here is the content from both images converted into Markdown format:
 
 markdown
-## QUESTION 3 (TOTAL MARKS: 25)
 
-### Q3. (a)
+## Question 3 [TOTAL MARKS: 25]
+
+### Question 3.A (4 Marks)
+
 Briefly describe the terms **ANOVA** and **family-wise error rate** in the context of ANOVA.  
-*(4 Marks)*
 
-### Q3. (b)
+### Question 3.B (6 Marks)
+
 \( X \sim \text{Exp}(\lambda) \) with \( E[X] = 1/\lambda \) and \( \text{Var}[X] = 1/\lambda^2 \).
 
 1. **State the \( \sigma_X \) value.**  
@@ -657,7 +676,7 @@ Given the following statistics:
 
 ---
 
-## QUESTION 4 (TOTAL MARKS: 25)
+## Question 4 [TOTAL MARKS: 25]
 
 ### Q4. (a)
 In the context of regression analysis, briefly explain the meaning of the terms: **SSE**, **SSR**, **SST**.  
@@ -686,18 +705,6 @@ It is known that 5% of manufactured components are defective. Samples of size \(
 *(8 Marks)*
 
 *(End of Question 4)*
-
----
-
-**STAT8024 - Applied Statistical Analysis**  
-Summer Examinations 2023/2024
-
-
-This Markdown format captures the structure and content of both questions and sub-questions as presented in the images
-## Paper Details
-
-STAT08024 - Applied Statistical Analysis
-Summer Examinations 2023/2024
 
 
 (TOTAL MARKS: 25)
@@ -909,8 +916,38 @@ SSB = \sum_{i=1}^{k} \frac{(\sum_{j=1}^{n} Y_{ij})^2}{n} - \frac{(\sum_{i=1}^{n}
 SSW = \sum_{i=1}^{k} \sum_{j=1}^{n} Y_{ij}^2 - \frac{1}{n} \sum_{i=1}^{k} \left( \sum_{j=1}^{n} Y_{ij} \right)^2
 \]
 
----
-**STAT8024 - Applied Statistical Analysis**  
-Summer Examinations 2023/2024
+## Paper College Details
 
-This Markdown retains the mathematical notation and structure as closely as possible to the original document.
+College: Technological University of the Shannon: Midlands Midwest  
+Module Title: Applied Statistical Analysis  
+Module Code: STAT08024
+Year of Study: 4  
+Semester: 2  
+Year: 2024 - Summer  
+Code on Paper: 2062c1e0  
+Date Time: 09-May-2024  
+
+### Programmes
+
+| Code         | Programme                                                   |
+|--------------|-------------------------------------------------------------|
+| LC_ETRIM_KMY | BEng (Honours) Electrical Engineering                       |
+| LC_EROBA_KMY | BEng (Honours) Industrial Automation and Robotic Systems    |
+| LC_FEECM_KMY | BEng (Honours) Electronic Engineering with Computer Systems |
+| LC_EROEM_KMY | BEng (Honours) Robotics and Automation Engineering          |
+| LC_ENEWA_KMY | BEng (Honours) Renewable and Electrical Energy Engineering  |
+| LC_ENEWA_KMY | BEng (Honours) Renewable and Electrical Energy Engineering  |
+| LC_EEECA_KMY | BEng (Honours) Electronic Engineering with Computer Systems |
+| LC_ETRIA_KMY | BEng (Honours) Electrical Engineering                       |
+| LC_EROBM_KMY | BEng (Honours) Industrial Automation and Robotic System     |
+
+### Examiners
+
+| Examiner          |            |
+|-------------------|------------|
+| Mr. Owen McGrath  | (Internal) |
+| Dr. Thomas O'Shea | (External) |
+| Mr. Kevin Collins | (External) |
+| Mr. Niall Murphy  | (External) |
+
+---
