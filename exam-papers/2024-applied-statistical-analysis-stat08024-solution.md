@@ -819,14 +819,31 @@ State the $\sigma_X$ value.
 
 ### Answer 3.B.1
 
+To find $\sigma_{\bar{X}}$, we use the fact that for the sample mean of $n$ independent and identically distributed random variables, the standard deviation of the sample mean is given by:
 
+$\sigma_{\bar{X}} = \frac{\sigma_X}{\sqrt{n}}$  
+
+Given that $\sigma_X = \frac{1}{\lambda}$ (the standard deviation of the exponential distribution, which is the square root of the variance), the standard deviation of the sample mean $\sigma_{\bar{X}}$ is:
+
+$\sigma_{\bar{X}} = \frac{1}{\lambda \sqrt{n}}$
+
+This is the value of $\sigma_{\bar{X}}$.
 
 #### Question 3.B.2 (3 Marks)
 
 Explain how the value from part (i) above was obtained.  
-   *(3 Marks)*
 
 ### Answer 3.B
+
+The value of $\sigma_{\bar{X}}$ was obtained by using the formula for the standard deviation of the sample mean. For any distribution with variance $\text{Var}[X]$, the standard deviation of the sample mean for $n$ samples is given by:
+
+$\sigma_{\bar{X}} = \frac{\sigma_X}{\sqrt{n}}$
+
+Given that the standard deviation $\sigma_X$ for an exponential distribution is $\frac{1}{\lambda}$, as derived from the relationship between variance and standard deviation:
+
+$\sigma_X = \sqrt{\text{Var}[X]} = \sqrt{\frac{1}{\lambda^2}} = \frac{1}{\lambda}$  
+
+This formula was applied to find the standard deviation of the sample mean.
 
 ### Q3. (c)
 
