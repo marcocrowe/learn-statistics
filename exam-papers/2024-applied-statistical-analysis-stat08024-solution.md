@@ -213,7 +213,7 @@ To solve the questions, we'll use the properties of the normal distribution.
 
    **Answer 1.C.1:** 50% of the boxes have cereal weighing over 500g.
 
-### Question 1.C.2
+#### Answer 1.C.2(alt)
 
 If $n = 5$ boxes are selected at random, compute $Pr(\overline{X} \leq 499.5)$.
 
@@ -270,20 +270,18 @@ $A \sim t_{11}. \text {Given }\Gamma(5.5)=52.34$, calculate $f(a=1)$.
 
 Sure, let's format the calculations correctly and ensure the steps are clear for the PDF calculation of the t-distribution at $a = 1$ with 11 degrees of freedom.
 
-### Calculation of the PDF for $A \sim t_{11}$ at $a = 1$
+**Calculation of the PDF for $A \sim t_{11}$ at $a = 1$**  
 
 The probability density function (PDF) of the t-distribution with $\nu$ degrees of freedom is given by:
 
-$$
-f(a) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu \pi} \Gamma\left(\frac{\nu}{2}\right)} \left(1 + \frac{a^2}{\nu}\right)^{-\frac{\nu + 1}{2}}
-$$
+$f(a) = \frac{\Gamma\left(\frac{\nu + 1}{2}\right)}{\sqrt{\nu \pi} \Gamma\left(\frac{\nu}{2}\right)} \left(1 + \frac{a^2}{\nu}\right)^{-\frac{\nu + 1}{2}}$
 
 Given:
 
 - Degrees of freedom $\nu = 11$
 - We need to calculate $f(a = 1)$
 
-### Step 1: Substitute into the formula
+**Step 1: Substitute into the formula**  
 
 The PDF at $a = 1$ is:
 
@@ -297,7 +295,7 @@ $$
 f(1) = \frac{\Gamma(6)}{\sqrt{11 \pi} \Gamma(5.5)} \left(\frac{12}{11}\right)^{-6}
 $$
 
-### Step 2: Use the provided values
+**Step 2: Use the provided values**  
 
 We are given:
 
@@ -305,7 +303,7 @@ We are given:
 - $\Gamma(x) = (x-1)!$ for integer x
 - $\Gamma(6) = 5! = 120$
 
-### Step 3: Compute the value
+**Step 3: Compute the value**  
 
 1. **Calculate $\sqrt{11 \pi}$**
 
@@ -541,7 +539,7 @@ Yes, you can indeed use the provided formula to compute $R^2$. In fact, this for
 
 Here’s how you can use the formula to calculate $R^2$ directly:
 
-### Formula Breakdown
+**Formula Breakdown**  
 
 The correlation coefficient $r_{x,y}$ is given by:
 $$
@@ -557,7 +555,7 @@ where:
 - $\sum y_i^2$ is the sum of the squares of the $y$ values.
 - $n$ is the number of pairs.
 
-### Steps to Calculate $R^2$ Using the Correlation Formula
+**Steps to Calculate $R^2$ Using the Correlation Formula**  
 
 | i           | $X_i$ |             | $Y_i$ |               | $X_{i}^2$ |               | $Y_i^2$ |                 | $X*Y$ |
 |-------------|------:|-------------|------:|---------------|----------:|---------------|--------:|-----------------|------:|
@@ -687,16 +685,11 @@ You are provided with the following information about the lap times of motorcycl
 
 1. **Sampling Distribution of the Sample Mean:**
    The sample mean $\bar{X}_M$ for a group of $n = 10$ motorcyclists is also normally distributed:
-   
-    $$
-   \bar{X} \sim \mathcal{N}\left(\mu = \mu, \sigma = \frac{\sigma}{\sqrt{n}}\right)
-   $$
-   
-   $$
-   \bar{X}_M \sim \mathcal{N}\left(\mu_{\bar{X}_M} = \mu, \sigma_{\bar{X}_M} = \frac{\sigma}{\sqrt{n}}\right)
-   $$
+    $\bar{X} \sim \mathcal{N}\left(\mu = \mu, \sigma = \frac{\sigma}{\sqrt{n}}\right)$
+
+   $\bar{X}_M \sim \mathcal{N}\left(\mu_{\bar{X}_M} = \mu, \sigma_{\bar{X}_M} = \frac{\sigma}{\sqrt{n}}\right)$
    - Mean of the sample mean $\mu_{\bar{X}_M} = 3.4$.
-   - Standard deviation of the sample mean (Standard Error): 
+   - Standard deviation of the sample mean (Standard Error):
      $$
      \sigma_{\bar{X}_M} = \frac{1.4}{\sqrt{10}} \approx \frac{1.4}{3.162} \approx 0.4426
      $$
@@ -704,8 +697,7 @@ You are provided with the following information about the lap times of motorcycl
 2. **Standardizing the Variable:**
 
    To find the probability that the average lap time is between 3 and 4 minutes, we first convert these values to their corresponding standard normal $z$-scores using the formula:
-$$ Z = \frac{X - \mu}{\sigma} \quad \text{and} \quad Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} $$
-    
+$$Z = \frac{X - \mu}{\sigma} \quad \text{and} \quad Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}}$$
    - For $\bar{X}_M = 3$:
      $$
      z_1 = \frac{3 - 3.4}{0.4426} \approx \frac{-0.4}{0.4426} \approx -0.904
@@ -715,14 +707,12 @@ $$ Z = \frac{X - \mu}{\sigma} \quad \text{and} \quad Z = \frac{\overline{X} - \m
      z_2 = \frac{4 - 3.4}{0.4426} \approx \frac{0.6}{0.4426} \approx 1.356
      $$
 
-3. **Finding the Probability:**
+**1. Finding the Probability:**
 
    The probability that the average lap time is between 3 and 4 minutes is the area under the standard normal curve between $z_1$ and $z_2$.
 
    - You can find these probabilities using the standard normal distribution table or a calculator.
-     $$
-     P(z_{higher} < Z < z_{lower}) = P(-0.904 < Z < 1.356)
-     $$
+     $P(z_{higher} < Z < z_{lower}) = P(-0.904 < Z < 1.356)$
 
      $P(Z > z_{lower} \And Z < z_{higher}) = P(Z < z_{higher}) - P(Z < z_{lower})$  
 This is because $(P(Z < z_2))$ gives the cumulative probability up to $(z_2)$, and $(P(Z < z_1))$ gives the cumulative probability up to $(z_1)$. Subtracting $(P(Z < z_1))$ from $(P(Z < z_2))$ gives the probability that (Z) is between $(z_1)$ and $(z_2)$.
@@ -747,11 +737,9 @@ This problem involves calculating the probability that a sample mean falls withi
 
 Calculate the probability that a motorcycle is faster than a car.
 
-### Answer 2.D.2
-
 ### Answer 2.D.2  
 
-**Calculating the Probability that a Motorcycle is Faster than a Car**
+**Calculating the Probability that a Motorcycle is Faster than a Car**  
 
 Let $X_M \sim N(\mu_M = 3.4, \sigma_M = 1.4)$ represent the lap times of motorcycles, and $X_C \sim N(\mu_C = 3.6, \sigma_C = 0.78)$ represent the lap times of cars.
 
@@ -845,16 +833,69 @@ $\sigma_X = \sqrt{\text{Var}[X]} = \sqrt{\frac{1}{\lambda^2}} = \frac{1}{\lambda
 
 This formula was applied to find the standard deviation of the sample mean.
 
-### Q3. (c)
+### Question 3.C (5 Marks)
 
 Let $p$ be the fraction of engineers who do not understand basic statistical concepts. In the past, this has been high; $p = 0.73$. A new program has been implemented to improve the engineers' knowledge and it is expected that $p$ would decrease from 0.73. To test $H_0: p \geq 0.73$, $H_1: p < 0.73$, 300 engineers in the new program were tested, and 208 did not comprehend basic statistical concepts. At the 5% significance level, can $H_0$ be rejected in favor of $H_1$?  
-*(5 Marks)*
+
+### Answer 3.C
+
+To test the hypothesis $H_0: p \geq 0.73$ against the alternative $H_1: p < 0.73$, we perform a one-sample proportion z-test.
+
+*Step 1: Define Parameters*  
+
+- **Null Hypothesis**: $H_0: p \geq 0.73$
+- **Alternative Hypothesis**: $H_1: p < 0.73$
+- Sample size: $n = 300$
+- Number of engineers who do not comprehend basic statistical concepts: $x = 208$
+- Sample proportion: $\hat{p} = \frac{208}{300} = 0.6933$
+- Hypothesized proportion: $p_0 = 0.73$
+- Significance level: $\alpha = 0.05$
+
+*Step 2: Test Statistic*  
+
+The test statistic for a proportion z-test is given by:
+
+\[
+z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1 - p_0)}{n}}}
+\]
+
+Using the values:
+- $\hat{p} = 0.6933$
+- $p_0 = 0.73$
+- $n = 300$
+
+We calculate the standard error:
+
+\[
+SE = \sqrt{\frac{p_0(1 - p_0)}{n}} = \sqrt{\frac{0.73(1 - 0.73)}{300}} = \sqrt{\frac{0.73 \times 0.27}{300}} = \sqrt{\frac{0.1971}{300}} = \sqrt{0.000657} = 0.02563
+\]
+
+Now calculate the z-statistic:
+
+\[
+z = \frac{0.6933 - 0.73}{0.02563} = \frac{-0.0367}{0.02563} = -1.432
+\]
+
+*Step 3: Critical Value and Decision*  
+
+For a one-tailed test at the $\alpha = 0.05$ significance level, the critical value from the standard normal distribution is $z_{\alpha} = -1.645$.
+
+- If $z < -1.645$, reject $H_0$.
+- If $z \geq -1.645$, fail to reject $H_0$.
+
+In our case, $z = -1.432$, which is greater than $-1.645$.
+
+*Conclusion*  
+
+Since $z = -1.432$ does not fall in the rejection region, we **fail to reject the null hypothesis**. There is insufficient evidence at the 5% significance level to conclude that the fraction of engineers who do not comprehend basic statistical concepts has decreased from 0.73.
+
+Thus, $H_0$ is not rejected in favor of $H_1$.
 
 ### Question 3.D
 
 The attendance (hundreds) at a racetrack $(x)$, and the amount $(\text{€} \times 10^6)$ that was gambled $(y)$, on $n = 10$ selected days are given in the following table:
 
-| Attendance |  117 | 128  | 122  | 119  | 131  | 135  | 125  | 120  | 130  | 127  |
+| Attendance |  117 |  128 |  122 |  119 |  131 |  135 |  125 |  120 |  130 |  127 |
 |------------|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 | Amount Bet | 2.07 | 2.80 | 3.14 | 2.26 | 3.40 | 3.89 | 2.93 | 2.66 | 3.33 | 3.54 |
 
@@ -869,16 +910,102 @@ $$\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}
 Given the following statistics:  
 $\sum x_i = 1254$, $\sum y_i = 30.02$, $\sum x_i^2 = 157558$, $\sum y_i^2 = 93.0652$, $\sum x_i y_i = 3791.09$, $\sum x_i^2 y_i = 1505902$.
 
-1. **Calculate the sample correlation coefficient.**  
-   *(3 Marks)*
+### Question 3.D.1 (3 Marks)
 
-2. **Determine the linear regression equation.**  
-   *(3 Marks)*
+Calculate the sample correlation coefficient.  
 
-3. **Provide an interpretation of the equation obtained in part (ii) above.**  
-   *(4 Marks)*
+### Answer 3.D.1
 
-*(End of Question 3)*  
+The formula for the sample correlation coefficient \(r\) is given in the appendix under the **Joint Distributions/Correlation/Regression** section as:
+
+$r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}$
+
+Given data:
+
+- $\sum x_i = 1254$
+- $\sum y_i = 30.02$
+- $\sum x_i^2 = 157558$
+- $\sum y_i^2 = 93.0652$
+- $\sum x_i y_i = 3791.09$
+- $n = 10$
+
+Substituting values into the formula:
+
+$r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}$  
+
+$r_{x,y} = \dfrac{3791.09 - 1254 \times 30.02 / 10}{\sqrt{\left( 157558 - 1254^2 / 10 \right) \left( 93.0652 - 30.02^2 / 10 \right)}}$  
+
+$r_{x,y} = \dfrac{3791.09 - 3764.4048}{\sqrt{\left( 157558 - 157251.6 \right) \left( 93.0652 - 900.6004 \right)}}$
+
+$r_{x,y} = \dfrac{26.6852}{\sqrt{306.4 \times 3.00516}}$  
+
+$r_{x,y} = \dfrac{26.6852}{\sqrt{920.676624}}$  
+
+$r_{x,y} = \dfrac{26.6852}{30.34} \approx 0.88$
+
+The sample correlation coefficient is \(r \approx 0.88\).
+
+### Question 3.D.2 (3 Marks)
+
+Determine the linear regression equation.  
+
+### Answer 3.D.2
+
+**Determine the linear regression equation:**  
+
+The formula for the linear regression equation \(y = \beta_0 + \beta_1 x\) is provided in the appendix by  
+
+$\beta_1 = \frac{\sum x_i y_i - \frac{\sum x_i \sum y_i}{n}}{\sum x_i^2 - \frac{(\sum x_i)^2}{n}}$  
+
+$r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}$  
+
+We can deduce that aboe the line ${S_XY} =  \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}$ and from below the  line we idenify that $S_{XX} = \sum x_i^2 - (\sum x_i)^2 / n$ and $S_{YY} = \sum y_i^2 - (\sum y_i)^2 / n$
+
+$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \quad \text{where} \quad \hat{\beta}_1 = \frac{S_{XY}}{S_{XX}}$  
+
+$\sigma_{\hat{\beta}_1} = \sqrt{\frac{SSE}{\sum (x_i - \bar{x})^2}} = \sqrt{\frac{s^2}{S_{XX}}} \quad \text{where} \quad s^2 = \frac{1}{n-2}(S_{YY} - \hat{\beta}_1 S_{XY})$  
+
+$\beta_0 = \overline{y} - \beta_1 \overline{x}$  
+
+First, calculate $\beta_1$:
+
+$\beta_1 = \frac{3791.09 - \frac{1254 \times 30.02}{10}}{157558 - \frac{1254^2}{10}}$  
+
+$\beta_1 = \frac{3791.09 - 3764.4048}{157558 - 157251.6}$  
+
+$\beta_1 = \frac{26.6852}{306.4}$  
+
+$\beta_1 \approx 0.0871$  
+
+Next, calculate $\beta_0$:
+
+The means are:
+
+$\overline{x} = \frac{\sum x_i}{n} = \frac{1254}{10} = 125.4$  
+
+$\overline{y} = \frac{\sum y_i}{n} = \frac{30.02}{10} = 3.002$  
+
+Substitute into the formula for $\beta_0$:
+
+$\beta_0 = 3.002 - (0.0871 \times 125.4)$  
+
+$\beta_0 = 3.002 - 10.92954$  
+
+$\beta_0 \approx -7.92754$  
+
+Thus, the linear regression equation is:
+
+$\beta_0 = \overline{y} - \beta_1 \overline{x}$  
+$\beta_0 + \beta_1 \overline{x} = \overline{y} $  
+$y = \beta_0 + \beta_1 \overline{x}$  
+$y = -7.93 + 0.087x$  
+
+### Question 3.D.3 (4 Marks)
+
+Provide an interpretation of the equation obtained in part (ii) above.
+
+### Answer 3.D.3
+
 
 ---
 
@@ -917,141 +1044,6 @@ It is known that 5% of manufactured components are defective. Samples of size $n
 
 *(End of Question 4)*
 
-(TOTAL MARKS: 25)
-
-QUESTION 3
-
-Q3. (a)
-
-Briefly describe the terms ANOVA and family-wise error rate in the context of ANOVA.
-(4 Marks)
-
-(i)
-
-Q3. (b)
-
-X~Exp(A)with E[X]=1/A and Var[X]=1/X2.
-State the ox value.
-(ii) Explain how the value from part (i) above was obtained.
-
-Q3. (c)
-
-Let p be the fraction of engineers who do not understand basic statistical concepts. In
-the past this has been high; p = 0.73. A new program has been implemented to im-
-prove the engineers' knowledge and it is expected that p would decrease from 0.73. To test
-Ho: p ≥ 0.73, H1: p<0.73, 300 engineers in the new program were tested, and 208 did not
-comprehend basic statistical concepts. At the 5% significance level, can Ho be rejected in
-(5 Marks)
-
-(3 Marks)
-(3 Marks)
-
-Attendance
-Amount Bet
-
-117
-2.07
-
-128
-2.80
-
-122
-3.14
-
-119
-2.26
-
-131
-3.40
-
-125
-2.93
-
-120
-2.66
-
-130
-3.33
-
-127
-3.54
-
-(i)
-(ii)
-
-(iii)
-
-favour of H1?
-
-Q3. (d)
-
-The attendance (hundreds) at a racetrack (x), and the amount (€x106) that was gambled
-(y), on n = 10 selected days are given in the following table:
-
-135
-3.89
-
-Calculate the sample correlation coefficient.
-
-Determine the linear regression equation.
-
-Provide an interpretation of the equation obtained in part (ii) above.
-
-(3 Marks)
-
-(3 Marks)
-
-(4 Marks)
-#
-QUESTION 4
-
-Q4. (a)
-
-In the context of regression analysis, briefly explain the meaning of the terms: SSE, SSR,
-SST.
-
-Q4. (b)
-
-In a two-tailed hypothesis test with a significance level of 5%, a researcher obtains a test
-statistic value of z = -2.2. Determine the p-value, and explain what this value means in
-relation to Ho.
-
-Q4. (c)
-
-A scientist is interested in assessing the relationship between two variables V1 (independent)
-and V2 (dependent) and takes n = 10 sample values from a lab experiment. Given r ~- 0.96:
-(i)
-(ii)
-
-(TOTAL MARKS: 25)
-
-(3 Marks)
-
-(4 Marks)
-
-Sketch a scatter-plot to visualise the overall pattern of the lab results. (2 Marks)
-Comment on the causal relationship between V1 and V2.
-
-(3 Marks)
-
-Q4. (d)
-
-It is known that 5% of manufactured components are defective. Samples of size n = 800
-are drawn from the process in order to determine the proportion of defects. Determine the
-proportion of samples that are likely to contain more than 6% defects.
-Note: X~Bin(n,p), E[X]=np,Var[X]=np(1-p),p=X/n.
-
-Q4. (e)
-
-95% of X values lie in the range p±1.96 -=. Rewrite this statement in terms of a probability
-equation and rearrange the equation to obtain an interval estimate for p.
-
-(5 Marks)
-
-σ
-
-(8 Marks)
-
 ## Appendix
 
 Here's the content of your exam paper converted to markdown, with LaTeX formatting using `$` for inline math and `$$` for block equations:
@@ -1062,51 +1054,46 @@ Here's the content of your exam paper converted to markdown, with LaTeX formatti
 
 ### Distributions
 
-$$ X \sim \text{Bin}(n, p), \, f(x|n, p) = \frac{n!}{(n-x)!x!} p^x (1 - p)^{n-x} $$
+$X \sim \text{Bin}(n, p), \, f(x|n, p) = \frac{n!}{(n-x)!x!} p^x (1 - p)^{n-x}$  
 
-$$ X \sim \text{Pois}(\lambda), \, f(x|\lambda) = \frac{\lambda^x e^{-\lambda}}{x!} $$
+$X \sim \text{Pois}(\lambda), \, f(x|\lambda) = \frac{\lambda^x e^{-\lambda}}{x!}$  
 
-$$ X \sim U(a, b), \, f(x|a, b) = \frac{1}{b-a} $$
+$X \sim U(a, b), \, f(x|a, b) = \frac{1}{b-a}$  
 
-$$ X \sim \text{Exp}(\lambda), \, f(x|\lambda) = \lambda e^{-\lambda x} $$
+$X \sim \text{Exp}(\lambda), \, f(x|\lambda) = \lambda e^{-\lambda x}$  
 
-$$ X \sim N(\mu, \sigma^2), \, f(x|\mu, \sigma) = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^2} $$
+$X \sim N(\mu, \sigma^2), \, f(x|\mu, \sigma) = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^2}$  
 
-$$ \overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right) $$
+$\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$  
 
-$$ X_i \sim N(\mu_i, \sigma_i^2) \quad \Rightarrow \quad X_i \pm X_j \sim N \left(\mu = (\mu_i \pm \mu_j), \, \sigma = \sqrt{\sigma_i^2 + \sigma_j^2}\right) $$
+$X_i \sim N(\mu_i, \sigma_i^2) \quad \Rightarrow \quad X_i \pm X_j \sim N \left(\mu = (\mu_i \pm \mu_j), \, \sigma = \sqrt{\sigma_i^2 + \sigma_j^2}\right)$  
 
-$$ X \sim t_\nu, \, f(x|\nu) = \frac{\Gamma\left(\frac{\nu+1}{2}\right)}{\sqrt{\nu\pi}\Gamma\left(\frac{\nu}{2}\right)} \left(1 + \frac{x^2}{\nu}\right)^{-\frac{\nu+1}{2}} $$
+$X \sim t_\nu, \, f(x|\nu) = \frac{\Gamma\left(\frac{\nu+1}{2}\right)}{\sqrt{\nu\pi}\Gamma\left(\frac{\nu}{2}\right)} \left(1 + \frac{x^2}{\nu}\right)^{-\frac{\nu+1}{2}}$  
 
-$$ G(z_1) = (z_1 - 1)!; z_1 \in N, \quad G(z_2) = \int_0^\infty t^{z_2-1} e^{-t} dt; z_2 \in \mathbb{R} $$
+$G(z_1) = (z_1 - 1)!; z_1 \in N, \quad G(z_2) = \int_0^\infty t^{z_2-1} e^{-t} dt; z_2 \in \mathbb{R}$  
 
-$$ X \sim F_{\nu_1, \nu_2}, \, f(x|\nu_1, \nu_2) = \frac{\left(\frac{\nu_1}{\nu_2}\right)^{\nu_1/2} \left(\frac{\nu_2}{\nu_2}\right)^{\nu_2/2} x^{(\nu_1/2)-1}}{B\left(\frac{\nu_1}{2}, \frac{\nu_2}{2}\right)\left(1+\frac{\nu_1}{\nu_2} x \right)^{(\nu_1+\nu_2)/2}} $$
+$X \sim F_{\nu_1, \nu_2}, \, f(x|\nu_1, \nu_2) = \frac{\left(\frac{\nu_1}{\nu_2}\right)^{\nu_1/2} \left(\frac{\nu_2}{\nu_2}\right)^{\nu_2/2} x^{(\nu_1/2)-1}}{B\left(\frac{\nu_1}{2}, \frac{\nu_2}{2}\right)\left(1+\frac{\nu_1}{\nu_2} x \right)^{(\nu_1+\nu_2)/2}}$  
 
-$$ X \sim \chi^2(\nu), \, f(x|\nu) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)} x^{\nu/2 - 1} e^{-x/2} $$
+$X \sim \chi^2(\nu), \, f(x|\nu) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)} x^{\nu/2 - 1} e^{-x/2}$  
 
-$$ Z = \frac{X - \mu}{\sigma} \quad \text{and} \quad Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} $$
-
----
+$Z = \frac{X - \mu}{\sigma} \quad \text{and} \quad Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}}$  
 
 ### Confidence Intervals
 
-| Parameter      | Confidence Interval                                                                                                           | Sample Size |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------|-------------|
-| $\mu$          | $$\overline{X} \pm z_{\alpha/2} \frac{s}{\sqrt{n}}$$                                                                           | Large       |
-| $p$            | $$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$$                                                             | Large       |
-| $\mu_1 - \mu_2$| $$\left(\overline{X}_1 - \overline{X}_2\right) \pm z_{\alpha/2} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$                 | Large       |
-| $p_1 - p_2$    | $$\left(\hat{p}_1 - \hat{p}_2\right) \pm z_{\alpha/2} \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}$$ | Large       |
-| $\mu$          | $$\overline{X} \pm t_{\nu, \alpha/2} \frac{s}{\sqrt{n}}$$                                                                      | Small       |
-| $\mu_1 - \mu_2 (\sigma_1 = \sigma_2)$ | $$\left(\overline{X}_1 - \overline{X}_2\right) \pm t_{\nu, \alpha/2} \sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}, \, s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}$$ | Small       |
+| Parameter                                | Confidence Interval                                                                                                                                                                                                                        | Sample Size |
+|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| $\mu$                                    | $$\overline{X} \pm z_{\alpha/2} \frac{s}{\sqrt{n}}$$                                                                                                                                                                                       | Large       |
+| $p$                                      | $$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$$                                                                                                                                                                         | Large       |
+| $\mu_1 - \mu_2$                          | $$\left(\overline{X}_1 - \overline{X}_2\right) \pm z_{\alpha/2} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$                                                                                                                             | Large       |
+| $p_1 - p_2$                              | $$\left(\hat{p}_1 - \hat{p}_2\right) \pm z_{\alpha/2} \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}$$                                                                                                 | Large       |
+|                                          |                                                                                                                                                                                                                                            |             |
+| $\mu$                                    | $$\overline{X} \pm t_{\nu, \alpha/2} \frac{s}{\sqrt{n}}$$                                                                                                                                                                                  | Small       |
+| $\mu_1 - \mu_2 (\sigma_1 = \sigma_2)$    | $$\left(\overline{X}_1 - \overline{X}_2\right) \pm t_{\nu, \alpha/2} \sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}, \, s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}$$                                                      | Small       |
 | $\mu_1 - \mu_2 (\sigma_1 \neq \sigma_2)$ | $$\left(\overline{X}_1 - \overline{X}_2\right) \pm t_{\nu, \alpha/2} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}; \, \nu = \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{(a+b)^2}{n_1 - 1} + \frac{(b)^2}{n_2 - 1}}$$ | Small       |
 
 ### Hypothesis Testing
 
-**Test statistic:**
-
-$$
-\frac{{\text{{statistic}} - H_0}}{{SE_{\text{{statistic}}}}}
-$$
+**Test statistic:**  $\dfrac{{\text{{statistic}} - H_0}}{{SE_{\text{{statistic}}}}}$
 
 **Note:** In single proportion test, use hypothesized p in SE. For difference in two proportions, replace $\hat{p}_1$ and $\hat{p}_2$ with $\hat{p}_c = \frac{x_1 + x_2}{n_1 + n_2}$.
 
@@ -1121,23 +1108,19 @@ $$\text{p-value} =
 
 ### Joint Distributions/Correlation/Regression
 
-$$
-E[g(X)] = \int g(x) f(x) dx
-$$
+$E[g(X)] = \int g(x) f(x) dx$
 
 For $f(x, y) \geq 0$ where $\int \int f(x, y) dx dy = 1$, $f(x) = \int f(x, y) dy$ and $f(y) = \int f(x, y) dx$.
 
-$$\text{Corr}[X, Y] = \frac{\text{Cov}[X, Y]}{\sqrt{\text{Var}[X] \text{Var}[Y]}} \quad \text{where} \quad \text{Cov}[X, X] = \text{Var}[X] = E[XX] - E[X] E[X]$$
+$\text{Corr}[X, Y] = \frac{\text{Cov}[X, Y]}{\sqrt{\text{Var}[X] \text{Var}[Y]}} \quad \text{where} \quad \text{Cov}[X, X] = \text{Var}[X] = E[XX] - E[X] E[X]$
 
-$$r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}$$
+$r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}$  
 
-$$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \quad \text{where} \quad \hat{\beta}_1 = \frac{S_{XY}}{S_{XX}}$$
+$\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \quad \text{where} \quad \hat{\beta}_1 = \frac{S_{XY}}{S_{XX}}$  
 
-$$\sigma_{\hat{\beta}_1} = \sqrt{\frac{SSE}{\sum (x_i - \bar{x})^2}} = \sqrt{\frac{s^2}{S_{XX}}} \quad \text{where} \quad s^2 = \frac{1}{n-2}(S_{YY} - \hat{\beta}_1 S_{XY})$$
+$\sigma_{\hat{\beta}_1} = \sqrt{\frac{SSE}{\sum (x_i - \bar{x})^2}} = \sqrt{\frac{s^2}{S_{XX}}} \quad \text{where} \quad s^2 = \frac{1}{n-2}(S_{YY} - \hat{\beta}_1 S_{XY})$  
 
-**Test statistic:**
-
-$$\frac{\hat{\beta}_1}{\sigma_{\hat{\beta}_1}} \sim t_{\alpha/2, n-k-1}$$
+**Test statistic:** $\frac{\hat{\beta}_1}{\sigma_{\hat{\beta}_1}} \sim t_{\alpha/2, n-k-1}$
 
 ## ANOVA
 
@@ -1147,6 +1130,12 @@ $$SSB = \sum_{i=1}^{k} \frac{(\sum_{j=1}^{n} Y_{ij})^2}{n} - \frac{(\sum_{i=1}^{
 
 $$SSW = \sum_{i=1}^{k} \sum_{j=1}^{n} Y_{ij}^2 - \frac{1}{n} \sum_{i=1}^{k} \left( \sum_{j=1}^{n} Y_{ij} \right)^2$$
 
+| Source  | Degrees of Freedom | Sum of Squares | Mean Square             | F  statistic          |
+|---------|--------------------|----------------|-------------------------|-----------------------|
+| Between | $k-1$              | $SSB$          | $MSB = \frac{SSB}{k-1}$ | $F = \frac{MSB}{MSW}$ |
+| Within  | $N-k$              | $SSW$          | $MSW = \frac{SSW}{N-k}$ |                       |
+|         |                    |                |                         |                       |
+| Total   | $N-1$              | $SSTO$         |                         |                       |
 
 ### Two-Way ANOVA
 
@@ -1162,100 +1151,14 @@ $$ \text{SSE} = \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^n (Y_{ijk} - \overline{Y}_{
 
 $$ \overline{Y}_{i..} = \frac{1}{bn} \sum_{j=1}^b \sum_{k=1}^n Y_{ijk}, \quad \overline{Y}_{.j.} = \frac{1}{an} \sum_{i=1}^a \sum_{k=1}^n Y_{ijk}, \quad \overline{Y}_{ij.} = \frac{1}{n} \sum_{k=1}^n Y_{ijk}, \quad \overline{Y} = \frac{1}{N} \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^n Y_{ijk} $$
 
----
-
-Here's the content of your exam paper converted to markdown, with LaTeX formatting using `$` for inline math and `$$` for block equations:
-
----
-
-## APPENDICES
-
-### Distributions
-
-$$ X \sim \text{Bin}(n, p), \, f(x|n, p) = \frac{n!}{(n-x)!x!} p^x (1 - p)^{n-x} $$
-
-$$ X \sim \text{Pois}(\lambda), \, f(x|\lambda) = \frac{\lambda^x e^{-\lambda}}{x!} $$
-
-$$ X \sim U(a, b), \, f(x|a, b) = \frac{1}{b-a} $$
-
-$$ X \sim \text{Exp}(\lambda), \, f(x|\lambda) = \lambda e^{-\lambda x} $$
-
-$$ X \sim N(\mu, \sigma^2), \, f(x|\mu, \sigma) = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^2} $$
-
-$$ \overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right) $$
-
-$$ X_i \sim N(\mu_i, \sigma_i^2) \quad \Rightarrow \quad X_i \pm X_j \sim N \left(\mu = (\mu_i \pm \mu_j), \, \sigma = \sqrt{\sigma_i^2 + \sigma_j^2}\right) $$
-
-$$ X \sim t_\nu, \, f(x|\nu) = \frac{\Gamma\left(\frac{\nu+1}{2}\right)}{\sqrt{\nu\pi}\Gamma\left(\frac{\nu}{2}\right)} \left(1 + \frac{x^2}{\nu}\right)^{-\frac{\nu+1}{2}} $$
-
-$$ G(z_1) = (z_1 - 1)!; z_1 \in N, \quad G(z_2) = \int_0^\infty t^{z_2-1} e^{-t} dt; z_2 \in \mathbb{R} $$
-
-$$ X \sim F_{\nu_1, \nu_2}, \, f(x|\nu_1, \nu_2) = \frac{\left(\frac{\nu_1}{\nu_2}\right)^{\nu_1/2} \left(\frac{\nu_2}{\nu_2}\right)^{\nu_2/2} x^{(\nu_1/2)-1}}{B\left(\frac{\nu_1}{2}, \frac{\nu_2}{2}\right)\left(1+\frac{\nu_1}{\nu_2} x \right)^{(\nu_1+\nu_2)/2}} $$
-
-$$ X \sim \chi^2(\nu), \, f(x|\nu) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)} x^{\nu/2 - 1} e^{-x/2} $$
-
-$$ Z = \frac{X - \mu}{\sigma} \quad \text{and} \quad Z = \frac{\overline{X} - \mu}{\sigma/\sqrt{n}} $$
-
----
-
-### Confidence Intervals
-
-| Parameter      | Confidence Interval                                                                                                           | Sample Size |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------|-------------|
-| $\mu$          | $$\overline{X} \pm z_{\alpha/2} \frac{s}{\sqrt{n}}$$                                                                           | Large       |
-| $p$            | $$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$$                                                             | Large       |
-| $\mu_1 - \mu_2$| $$\left(\overline{X}_1 - \overline{X}_2\right) \pm z_{\alpha/2} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$                 | Large       |
-| $p_1 - p_2$    | $$\left(\hat{p}_1 - \hat{p}_2\right) \pm z_{\alpha/2} \sqrt{\frac{\hat{p}_1(1 - \hat{p}_1)}{n_1} + \frac{\hat{p}_2(1 - \hat{p}_2)}{n_2}}$$ | Large       |
-| $\mu$          | $$\overline{X} \pm t_{\nu, \alpha/2} \frac{s}{\sqrt{n}}$$                                                                      | Small       |
-| $\mu_1 - \mu_2 (\sigma_1 = \sigma_2)$ | $$\left(\overline{X}_1 - \overline{X}_2\right) \pm t_{\nu, \alpha/2} \sqrt{\frac{s_p^2}{n_1} + \frac{s_p^2}{n_2}}, \, s_p^2 = \frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}$$ | Small       |
-| $\mu_1 - \mu_2 (\sigma_1 \neq \sigma_2)$ | $$\left(\overline{X}_1 - \overline{X}_2\right) \pm t_{\nu, \alpha/2} \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}; \, \nu = \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{(a+b)^2}{n_1 - 1} + \frac{(b)^2}{n_2 - 1}}$$ | Small       |
-
----
-
-### Two-Way ANOVA
-
-$$ \text{SSTO} = \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^n (Y_{ijk} - \overline{Y})^2 = \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^n Y_{ijk}^2 - \frac{T^2}{N} $$
-
-$$ \text{SSA} = bn \sum_{i=1}^a (\overline{Y}_{i..} - \overline{Y})^2 = \frac{1}{bn} \sum_{i=1}^a Y_{i..}^2 - \frac{T^2}{N} $$
-
-$$ \text{SSB} = an \sum_{j=1}^b (\overline{Y}_{.j.} - \overline{Y})^2 = \frac{1}{an} \sum_{j=1}^b Y_{.j.}^2 - \frac{T^2}{N} $$
-
-$$ \text{SSAB} = n \sum_{i=1}^a \sum_{j=1}^b (Y_{ij.} - \overline{Y}_{i..} - \overline{Y}_{.j.} + \overline{Y})^2 = \frac{1}{n} \sum_{i=1}^a \sum_{j=1}^b Y_{ij.}^2 - \frac{T^2}{N} - \text{SSA} - \text{SSB} $$
-
-$$ \text{SSE} = \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^n (Y_{ijk} - \overline{Y}_{ij.})^2 = \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^n Y_{ijk}^2 - \sum_{i=1}^a \sum_{j=1}^b Y_{ij.}^2 $$
-
-$$ \overline{Y}_{i..} = \frac{1}{bn} \sum_{j=1}^b \sum_{k=1}^n Y_{ijk}, \quad \overline{Y}_{.j.} = \frac{1}{an} \sum_{i=1}^a \sum_{k=1}^n Y_{ijk}, \quad \overline{Y}_{ij.} = \frac{1}{n} \sum_{k=1}^n Y_{ijk}, \quad \overline{Y} = \frac{1}{N} \sum_{i=1}^a \sum_{j=1}^b \sum_{k=1}^n Y_{ijk} $$
-
----
-
-| Source         | Degrees of Freedom | Sum of Squares | Mean Square | F Statistic |
-|----------------|--------------------|----------------|-------------|-------------|
-| Between        | $k - 1$            | $\text{SSB}$   | $\text{MSB} = \
-
-frac{\text{SSB}}{k-1}$ | $\frac{\text{MSB}}{\text{MSW}}$ |
-| Within         | $N - k$            | $\text{SSW}$   | $\text{MSW} = \frac{\text{SSW}}{N-k}$ | - |
-| Total          | $N - 1$            | $\text{SSTO}$  | -           | - |
-
----
-
-| Source  | Degrees of Freedom | Sum of Squares | Mean Square  | F Statistic          |
-|---------|--------------------|----------------|--------------|----------------------|
-| A       | $a - 1$            | $\text{SSA}$   | $\text{MSA} = \frac{\text{SSA}}{a-1}$ | $F_A = \frac{\text{MSA}}{\text{MSE}}$ |
-| B       | $b - 1$            | $\text{SSB}$   | $\text{MSB} = \frac{\text{SSB}}{b-1}$ | $F_B = \frac{\text{MSB}}{\text{MSE}}$ |
-| AB      | $(a - 1)(b - 1)$    | $\text{SSAB}$  | $\text{MSAB} = \frac{\text{SSAB}}{(a-1)(b-1)}$ | $F_{AB} = \frac{\text{MSAB}}{\text{MSE}}$ |
-| Error   | $ab(n - 1)$         | $\text{SSE}$   | $\text{MSE} = \frac{\text{SSE}}{ab(n-1)}$ | - |
-| Total   | $N - 1$             | $\text{SSTO}$  | -            | - |
-
----
-
-*STAT08024 - Applied Statistical Analysis*  
-*Summer Examinations 2023/2024*  
-*Page 6 of 8 and Page 8 of 8*
-
---- 
-
-I hope this helps! Let me know if you need any more changes or clarifications.
-
+| Source | Degrees of Freedom | Sum of Squares | Mean Square                             | F  statistic           |
+|--------|--------------------|----------------|-----------------------------------------|------------------------|
+| A      | $a-1$              | $\text{SSA}$   | $MSA = \frac{\text{SSA}}{a-1}$          | $F = \frac{MSA}{MSE}$  |
+| B      | $b-1$              | $\text{SSB}$   | $MSB = \frac{\text{SSB}}{b-1}$          | $F = \frac{MSB}{MSE}$  |
+| AB     | $(a-1)(b-1)$       | $\text{SSAB}$  | $MSAB = \frac{\text{SSAB}}{(a-1)(b-1)}$ | $F = \frac{MSAB}{MSE}$ |
+| Error  | $ab(n-1)$          | $\text{SSE}$   | $MSE = \frac{\text{SSE}}{ab(n-1)}$      |                        |
+|        |                    |                |                                         |                        |
+| Total  | $abn-1$            | $\text{SSTO}$  |                                         |                        |
 
 ## Paper College Details
 

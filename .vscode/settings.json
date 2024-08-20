@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ANOVA",
+        "infty",
         "LC_EEECA_KMY",
         "LC_ENEWA_KMY",
         "LC_EROBA_KMY",
@@ -9,6 +10,11 @@
         "LC_ETRIA_KMY",
         "LC_ETRIM_KMY",
         "LC_FEECM_KMY",
+        "mathbb",
+        "mathcal",
+        "MSAB",
+        "Pois",
+        "SSAB",
         "SSTO"
     ]
 }
