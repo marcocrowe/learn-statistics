@@ -959,7 +959,7 @@ $\beta_1 = \frac{\sum x_i y_i - \frac{\sum x_i \sum y_i}{n}}{\sum x_i^2 - \frac{
 
 $r_{x,y} = \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}{\sqrt{\left[ \sum x_i^2 - (\sum x_i)^2 / n \right] \left[ \sum y_i^2 - (\sum y_i)^2 / n \right]}} = \frac{S_{XY}}{\sqrt{S_{XX} S_{YY}}}$  
 
-We can deduce that aboe the line ${S_XY} =  \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}$ and from below the  line we idenify that $S_{XX} = \sum x_i^2 - (\sum x_i)^2 / n$ and $S_{YY} = \sum y_i^2 - (\sum y_i)^2 / n$
+We can deduce that above the line ${S_XY} =  \frac{\sum x_i y_i - (\sum x_i)(\sum y_i) / n}$ and from below the  line we identify that $S_{XX} = \sum x_i^2 - (\sum x_i)^2 / n$ and $S_{YY} = \sum y_i^2 - (\sum y_i)^2 / n$
 
 $\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x} \quad \text{where} \quad \hat{\beta}_1 = \frac{S_{XY}}{S_{XX}}$  
 
@@ -1006,29 +1006,103 @@ Provide an interpretation of the equation obtained in part (ii) above.
 
 ### Answer 3.D.3
 
-
 ---
 
 ## Question 4 [TOTAL MARKS: 25]
 
-### Q4. (a)
+### Question 4.A (3 Marks)
 
 In the context of regression analysis, briefly explain the meaning of the terms: **SSE**, **SSR**, **SST**.  
-*(3 Marks)*
 
-### Q4. (b)
+### Answer 4.A
 
-In a two-tailed hypothesis test with a significance level of 5%, a researcher obtains a test statistic value of $z = -2.2$. Determine the p-value, and explain what this value means in relation to $H_0$.  
-*(4 Marks)*
+In regression analysis, the terms **SSE**, **SSR**, and **SST** are used to evaluate the goodness of fit of a regression model:
 
-### Q4. (c)
+In the context of regression analysis, the terms SSE, SSR, and SST are used to measure different components of the variability in the data:
+
+1. **SSE (Sum of Squared Errors)**:
+   - **Definition**: SSE measures the total deviation of the observed values from the predicted values (the regression line). It represents the unexplained variation or the error in the model.
+   - **Formula**: 
+     $$
+     \text{SSE} = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+     $$
+     where $y_i$ are the observed values, and $\hat{y}_i$ are the predicted values from the regression line.
+
+2. **SSR (Sum of Squares due to Regression)**:
+   - **Definition**: SSR measures the total deviation of the predicted values from the mean of the observed values. It represents the explained variation by the regression model.
+   - **Formula**: 
+     $$
+     \text{SSR} = \sum_{i=1}^{n} (\hat{y}_i - \bar{y})^2
+     $$
+     where $\hat{y}_i$ are the predicted values, and $\bar{y}$ is the mean of the observed values.
+
+3. **SST (Total Sum of Squares)**:
+   - **Definition**: SST measures the total deviation of the observed values from their mean. It represents the total variation in the observed data.
+   - **Formula**: 
+     $$
+     \text{SST} = \sum_{i=1}^{n} (y_i - \bar{y})^2
+     $$
+     where $y_i$ are the observed values, and $\bar{y}$ is the mean of the observed values.
+
+
+**Relationship:**  
+- The relationship between these terms is expressed as:
+  $$
+  \text{SST} = \text{SSR} + \text{SSE}
+  $$
+- This equation shows that the total variation in the data (SST) is the sum of the variation explained by the regression model (SSR) and the unexplained variation or error (SSE).
+
+### Question 4.B (4 Marks)
+
+In a two-tailed hypothesis test with a significance level of 5%, a researcher obtains a test statistic value of $z = -2.2$. Determine the p-value, and explain what this value means in relation to $H_0$.
+
+### Answer 4.B
+
+**Type of Question**  
+This question is a **hypothesis testing** problem, specifically involving a **two-tailed z-test**. The goal is to determine the p-value associated with the test statistic and interpret its significance in relation to the null hypothesis ($H_0$).
+
+**Steps to Answer the Question**  
+
+**1. Identify the Given Information**:
+
+- **Test statistic**: $z = -2.2$
+- **Significance level**: $\alpha = 0.05$ (for a two-tailed test)
+
+**2. Determine the p-value**:
+
+- The p-value is the probability of obtaining a test statistic as extreme as, or more extreme than, the observed value under the null hypothesis.
+- Since this is a two-tailed test, the p-value is calculated by finding the area in both tails of the standard normal distribution corresponding to $z = -2.2$ and $z = 2.2$.
+- First, find the area to the left of $z = -2.2$ using a z-table or statistical software.
+  - Look up $z = -2.2$ in the z-table (or use a calculator), which gives a cumulative probability of approximately 0.0139.
+  - Since it is a two-tailed test, the p-value is:
+     $\text{p-value} = 2 \times P(Z < -2.2) = 2 \times 0.0139 = 0.0278$
+
+**3.Interpret the p-value**:
+
+- The p-value of approximately 0.0278 represents the probability of observing a test statistic as extreme as $z = -2.2$ (or $z = 2.2$) under the null hypothesis $H_0$.
+  - Compare the p-value to the significance level $\alpha = 0.05$:
+  - Since the p-value (0.0278) is less than the significance level (0.05), you reject the null hypothesis $H_0$.
+  - This means there is sufficient evidence to suggest that the test statistic is significantly different from zero, indicating that the observed effect is statistically significant.
+
+**Final Answer:**  
+
+- **p-value**: The p-value is approximately 0.0278.
+- **Interpretation**:  Since the p-value (0.0278) $p < \alpha$ is less than the significance level (0.05), you reject the null hypothesis $H_0$. This suggests that the observed test statistic $z = -2.2$ provides enough evidence to conclude that there is a statistically significant effect, and the null hypothesis is unlikely to be true.
+
+### Question 4.C (5 Marks)
 
 A scientist is interested in assessing the relationship between two variables $V_1$ (independent) and $V_2$ (dependent) and takes $n = 10$ sample values from a lab experiment. Given $r \approx -0.96$:
 
-1. **Sketch a scatter-plot to visualize the overall pattern of the lab results.**  
-   *(2 Marks)*
+#### Question 4.C.1 (2 Marks)
 
-2. **Comment on the causal relationship between $V_1$ and $V_2$.**  
+Sketch a scatter-plot to visualize the overall pattern of the lab results.  
+
+### Answer 4.C.1
+
+![1724151554686](images/2024-applied-statistical-analysis-stat08024-solution/1724151554686.png)
+
+
+1. **Comment on the causal relationship between $V_1$ and $V_2$.**  
    *(3 Marks)*
 
 ### Q4. (d)
