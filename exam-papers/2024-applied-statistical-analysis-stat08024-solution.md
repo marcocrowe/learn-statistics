@@ -1113,7 +1113,6 @@ Although a strong negative correlation between $V_1$ and $V_2$ suggests a signif
 
 It is known that 5% of manufactured components are defective. Samples of size $n = 800$ are drawn from the process in order to determine the proportion of defects. Determine the proportion of samples that are likely to contain more than 6% defects.  
 **Note:** $X \sim \text{Bin}(n, p)$, $E[X] = np$, $\text{Var}[X] = np(1-p)$, $\hat{p} = X/n$.  
-*(5 Marks)*
 
 ### Answer 4.D
 
@@ -1173,24 +1172,47 @@ $P(X > 48) \approx P\left( Z > \frac{48 - 40}{6.16} \right) \approx \dfrac{8}{6.
 
 **4. Find the Proportion Using Z-Table**  
 
-- Look up the Z-score $1.30$ in the Z-table to find the cumulative probability.
-
-$P(Z \leq 1.30) \approx 0.9032$
-
-- To find $P(Z > 1.30)$:
-
-$P(Z > 1.30) = 1 - P(Z \leq 1.30) = 1 - 0.9032 = 0.0968$
+Lookup $P(Z > 1.30)$ in the Z-table to find the cumulative probability, is found to 0.0968
 
 **Summary**  
 
-Approximately $9.68\%$ of the samples are likely to contain more than 6% defective components.
+Approximately $9.68\%$ of the samples are likely to contain more than 6% defective components.  
 
-
-
-### Q4. (e)
+### Question 4.E (8 Marks)
 
 95% of $\bar{X}$ values lie in the range $\mu \pm 1.96 \frac{\sigma}{\sqrt{n}}$. Rewrite this statement in terms of a probability equation and rearrange the equation to obtain an interval estimate for $\mu$.  
-*(8 Marks)*
+
+### Answer 4.E
+
+**1. Translate the Statement into a Probability Equation**  
+
+The statement "95% of $\bar{X}$ values lie in the range $\mu \pm 1.96 \frac{\sigma}{\sqrt{n}}$" can be translated into a probability statement about the sample mean $\bar{X}$ as follows:
+
+$P\left(\mu - 1.96 \frac{\sigma}{\sqrt{n}} \leq \bar{X} \leq \mu + 1.96 \frac{\sigma}{\sqrt{n}}\right) = 0.95$
+
+This equation reflects that there is a 95% probability that the sample mean $\bar{X}$ will fall within the interval centered around $\mu$ with a margin of error $1.96 \frac{\sigma}{\sqrt{n}}$.
+
+**2. Rearrange the Equation for Interval Estimation**
+
+To obtain an interval estimate for $\mu$, we can rearrange the probability equation as follows:
+
+$P\left(\mu - 1.96 \frac{\sigma}{\sqrt{n}} \leq \bar{X} \leq \mu + 1.96 \frac{\sigma}{\sqrt{n}}\right) = 0.95$  
+
+Subtract $\mu$ from all parts of the inequality:
+
+$-1.96 \left(\frac{\sigma}{\sqrt{n}}\right) \leq \bar{X} - \mu \leq 1.96 \left(\frac{\sigma}{\sqrt{n}}\right)$
+
+Subtract $\bar{X}$ from all parts of the inequality:
+
+$-1.96 \left(\frac{\sigma}{\sqrt{n}}\right) - \bar{X} \leq -\mu \leq 1.96 \left(\frac{\sigma}{\sqrt{n}}\right) - \bar{X}$
+
+Divide by $-1$ to reverse the inequality signs:
+
+$1.96 \left(\frac{\sigma}{\sqrt{n}}\right) + \bar{X} \geq \mu \geq -1.96 \left(\frac{\sigma}{\sqrt{n}}\right) + \bar{X}$
+
+Therefore, the interval estimate for $\mu$ is:
+
+$$\boxed{\bar{X} - 1.96 \left(\frac{\sigma}{\sqrt{n}}\right) \leq \mu \leq \bar{X} + 1.96 \left(\frac{\sigma}{\sqrt{n}}\right)}$$
 
 *(End of Question 4)*
 
