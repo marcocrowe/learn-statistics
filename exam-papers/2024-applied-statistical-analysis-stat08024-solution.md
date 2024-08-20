@@ -1101,15 +1101,91 @@ Sketch a scatter-plot to visualize the overall pattern of the lab results.
 
 ![1724151554686](images/2024-applied-statistical-analysis-stat08024-solution/1724151554686.png)
 
+### Question 4.C.2 (3 Marks)
 
-1. **Comment on the causal relationship between $V_1$ and $V_2$.**  
-   *(3 Marks)*
+Comment on the causal relationship between $V_1$ and $V_2$.**  
 
-### Q4. (d)
+### Answer 4.C.2
+
+Although a strong negative correlation between $V_1$ and $V_2$ suggests a significant relationship, it does not establish causality. Further research, such as controlled experiments and investigations into potential confounding variables, is required to determine if $V_1$ causes changes in $V_2$ or if the observed relationship is due to other factors.
+
+### Question 4.D (5 Marks)
 
 It is known that 5% of manufactured components are defective. Samples of size $n = 800$ are drawn from the process in order to determine the proportion of defects. Determine the proportion of samples that are likely to contain more than 6% defects.  
 **Note:** $X \sim \text{Bin}(n, p)$, $E[X] = np$, $\text{Var}[X] = np(1-p)$, $\hat{p} = X/n$.  
 *(5 Marks)*
+
+### Answer 4.D
+
+**Type of Question**  
+
+This is a **probability question** involving the **binomial distribution** and its approximation using the **normal distribution**. Specifically, you need to find the proportion of samples where the defect rate exceeds 6%, given that the true defect rate is 5%.
+
+**Steps to Answer the Question**  
+
+**1. Define the Binomial Distribution**  
+
+Given:
+- The defect rate (probability of defect) $p = 0.05$
+- Sample size $n = 800$
+
+Let $X$ be the number of defective components in a sample of size $n$. The random variable $X$ follows a binomial distribution:
+
+$X \sim \text{Bin}(n = 800, p = 0.05)$
+
+The proportion of defective components is:
+
+$\hat{p} = \dfrac{X}{n}$
+
+**2. Calculate the Mean and Variance of the Binomial Distribution**  
+
+- **Mean** ($\mu$) of $X$:
+- $E[X] = \mu \therefore \mu = n \cdot p = 800 \times 0.05 = 40$
+
+- **Variance** ($\sigma^2$) of $X$:
+**Variance** ($\sigma^2$) of $X$: $\text{Var}[X]$
+
+$\sigma^2 = np(1-p) = 800 \times 0.05 \times (1 - 0.05) = 800 \times 0.05 \times 0.95 = 38$
+
+- **Standard Deviation** ($\sigma$) of $X$:
+
+$\sigma = \sqrt{38} \approx 6.16$
+
+**3. Use the Normal Approximation**  
+
+For large sample sizes, the binomial distribution can be approximated by a normal distribution with mean $\mu$ and standard deviation $\sigma$.
+
+- **Normal Distribution**:
+
+$X \approx \text{N}(\mu = 40, \sigma^2 = 38)$
+
+- To find the proportion of samples with more than 6% defects:
+
+$\hat{p} > 0.06 \quad \text{implies} \quad \frac{X}{n} > 0.06 \quad \text{or} \quad X > 0.06 \times 800 = 48$
+
+We need to find $P(X > 48)$ using the normal approximation:
+
+Calculate the Z-score:
+
+$Z = \dfrac{X - \mu}{\sigma} \quad \text{and} \quad Z = \dfrac{\overline{X} - \mu}{\sigma/\sqrt{n}}$  
+
+$P(X > 48) \approx P\left( Z > \frac{48 - 40}{6.16} \right) \approx \dfrac{8}{6.16} \approx 1.30$  
+
+**4. Find the Proportion Using Z-Table**  
+
+- Look up the Z-score $1.30$ in the Z-table to find the cumulative probability.
+
+$P(Z \leq 1.30) \approx 0.9032$
+
+- To find $P(Z > 1.30)$:
+
+$P(Z > 1.30) = 1 - P(Z \leq 1.30) = 1 - 0.9032 = 0.0968$
+
+**Summary**  
+
+Approximately $9.68\%$ of the samples are likely to contain more than 6% defective components.
+
+
 
 ### Q4. (e)
 
